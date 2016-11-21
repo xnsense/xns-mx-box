@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -276,6 +276,9 @@
 <dimension x1="0" y1="0" x2="54.2" y2="0" x3="27.1" y3="-2.54" textsize="1.778" layer="20"/>
 <text x="50.8" y="48.26" size="3.81" layer="26" rot="MR0">xnsense.no</text>
 <text x="50.8" y="13.97" size="3.81" layer="26" rot="MR0">mx2-7-6-esp12-rev0</text>
+<dimension x1="3.81" y1="55.88" x2="3.81" y2="59.69" x3="-7.62" y3="57.785" textsize="1.778" layer="20"/>
+<dimension x1="3.81" y1="3.81" x2="3.81" y2="0" x3="-7.62" y3="1.905" textsize="1.778" layer="20"/>
+<dimension x1="44.45" y1="54.61" x2="44.45" y2="59.69" x3="58.42" y3="57.15" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="wirepad">

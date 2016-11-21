@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -470,7 +470,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.762" drill="0.508">
+<class number="0" name="default" width="0.635" drill="0.508">
 <clearance class="0" value="0.127"/>
 </class>
 </classes>
