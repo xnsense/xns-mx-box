@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -365,6 +365,80 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <technology name="3.3"/>
 <technology name="5.0"/>
 <technology name="9.0"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="adafruit">
+<packages>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01-CLEANBIG">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="1X1-BIGPOGO">
+<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54" shape="long"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD1">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
+&lt;p&gt;
+With round pins</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CB" package="1X01-CLEANBIG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BIGPOGO" package="1X1-BIGPOGO">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -901,6 +975,235 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </deviceset>
 </devicesets>
 </library>
+<library name="ESP8266-ESP12E">
+<packages>
+<package name="ESP8266-ESP12E">
+<description>
+&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
+The author cannot warrant that this library is free from error
+or will meet your specific requirements.&lt;p&gt;
+&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
+</description>
+<wire x1="8.58" y1="-10.16" x2="8.58" y2="13.94" width="0.127" layer="21"/>
+<wire x1="8.58" y1="13.94" x2="-7.62" y2="13.94" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="13.94" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
+<smd name="8" x="-7.62" y="-8.16" dx="2" dy="1.2" layer="1"/>
+<smd name="7" x="-7.62" y="-6.16" dx="2" dy="1.2" layer="1"/>
+<smd name="6" x="-7.62" y="-4.16" dx="2" dy="1.2" layer="1"/>
+<smd name="5" x="-7.62" y="-2.16" dx="2" dy="1.2" layer="1"/>
+<smd name="4" x="-7.62" y="-0.16" dx="2" dy="1.2" layer="1"/>
+<smd name="3" x="-7.62" y="1.84" dx="2" dy="1.2" layer="1"/>
+<smd name="2" x="-7.62" y="3.84" dx="2" dy="1.2" layer="1"/>
+<smd name="1" x="-7.62" y="5.84" dx="2" dy="1.2" layer="1"/>
+<smd name="9" x="8.58" y="-8.16" dx="2" dy="1.2" layer="1"/>
+<smd name="10" x="8.58" y="-6.16" dx="2" dy="1.2" layer="1"/>
+<smd name="11" x="8.58" y="-4.16" dx="2" dy="1.2" layer="1"/>
+<smd name="12" x="8.58" y="-2.16" dx="2" dy="1.2" layer="1"/>
+<smd name="13" x="8.58" y="-0.16" dx="2" dy="1.2" layer="1"/>
+<smd name="14" x="8.58" y="1.84" dx="2" dy="1.2" layer="1"/>
+<smd name="15" x="8.58" y="3.84" dx="2" dy="1.2" layer="1"/>
+<smd name="16" x="8.58" y="5.84" dx="2" dy="1.2" layer="1"/>
+<text x="-2.62" y="-8.16" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="-2.62" y="0.95" size="1.27" layer="21">ESP-12E</text>
+<wire x1="-5.08" y1="6.35" x2="-5.08" y2="7.62" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="12.7" x2="-3.81" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="12.7" x2="-3.81" y2="8.89" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="8.89" x2="-2.54" y2="8.89" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="8.89" x2="-2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.7" x2="-1.27" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="12.7" x2="-1.27" y2="8.89" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="8.89" x2="0" y2="8.89" width="0.127" layer="51"/>
+<wire x1="0" y1="8.89" x2="0" y2="12.7" width="0.127" layer="51"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="12.7" width="0.127" layer="51"/>
+<wire x1="1.27" y1="12.7" x2="1.27" y2="8.89" width="0.127" layer="51"/>
+<wire x1="1.27" y1="8.89" x2="2.54" y2="8.89" width="0.127" layer="51"/>
+<wire x1="2.54" y1="8.89" x2="2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="2.54" y1="12.7" x2="6.35" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="51"/>
+<smd name="21" x="3.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="17" x="-4.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="18" x="-2.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-7.62" y1="-10.16" x2="8.58" y2="-10.16" width="0.127" layer="21"/>
+<smd name="22" x="5.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="19" x="-0.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="20" x="1.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
+<rectangle x1="-7.62" y1="6.985" x2="8.89" y2="13.97" layer="42"/>
+<rectangle x1="-7.62" y1="6.985" x2="8.89" y2="13.97" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP12E">
+<description>
+&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
+The author cannot warrant that this library is free from error
+or will meet your specific requirements.&lt;p&gt;
+&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
+</description>
+<pin name="GND" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO15" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO2" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO0" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO4" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="GPIO5" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="RXD" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="TXD" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="REST" x="-22.86" y="7.62" length="middle"/>
+<pin name="ADC" x="-22.86" y="5.08" length="middle"/>
+<pin name="CH_PD" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO16" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO14" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO12" x="-22.86" y="-5.08" length="middle"/>
+<pin name="GPIO13" x="-22.86" y="-7.62" length="middle"/>
+<pin name="VCC" x="-22.86" y="-10.16" length="middle"/>
+<wire x1="-17.78" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="10.16" size="1.27" layer="94">ESP8266_ESP12E</text>
+<text x="-10.16" y="12.7" size="1.27" layer="94">&gt;NAME</text>
+<pin name="CS0" x="-12.7" y="-25.4" length="middle" rot="R90"/>
+<pin name="MISO" x="-10.16" y="-25.4" length="middle" rot="R90"/>
+<pin name="GPIO9" x="-7.62" y="-25.4" length="middle" rot="R90"/>
+<pin name="GPIO10" x="-5.08" y="-25.4" length="middle" rot="R90"/>
+<pin name="MOSI" x="-2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="SCLK" x="0" y="-25.4" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP8266-12E" prefix="MDL" uservalue="yes">
+<description>
+&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
+The author cannot warrant that this library is free from error
+or will meet your specific requirements.&lt;p&gt;
+&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
+</description>
+<gates>
+<gate name="G$1" symbol="ESP12E" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="ESP8266-ESP12E" package="ESP8266-ESP12E">
+<connects>
+<connect gate="G$1" pin="ADC" pad="2"/>
+<connect gate="G$1" pin="CH_PD" pad="3"/>
+<connect gate="G$1" pin="CS0" pad="17"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GPIO0" pad="12"/>
+<connect gate="G$1" pin="GPIO10" pad="20"/>
+<connect gate="G$1" pin="GPIO12" pad="6"/>
+<connect gate="G$1" pin="GPIO13" pad="7"/>
+<connect gate="G$1" pin="GPIO14" pad="5"/>
+<connect gate="G$1" pin="GPIO15" pad="10"/>
+<connect gate="G$1" pin="GPIO16" pad="4"/>
+<connect gate="G$1" pin="GPIO2" pad="11"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
+<connect gate="G$1" pin="GPIO9" pad="19"/>
+<connect gate="G$1" pin="MISO" pad="18"/>
+<connect gate="G$1" pin="MOSI" pad="21"/>
+<connect gate="G$1" pin="REST" pad="1"/>
+<connect gate="G$1" pin="RXD" pad="15"/>
+<connect gate="G$1" pin="SCLK" pad="22"/>
+<connect gate="G$1" pin="TXD" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-PowerIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="V-REG-LDO">
+<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="9.144" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-10.16" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="BP" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MIC5205" prefix="U" uservalue="yes">
+<description>MIC5205 150mA vreg&lt;br&gt;
+3.3V - VREG-00822&lt;br&gt;
+5V - VREG-00823</description>
+<gates>
+<gate name="G$1" symbol="V-REG-LDO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3.3V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-00822"/>
+</technology>
+</technologies>
+</device>
+<device name="5V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-00823"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -915,73 +1218,35 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="PAD79" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD80" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD81" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD82" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD83" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD84" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD85" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD82" library="wirepad" deviceset="1,6/0,8" device="" value="TX"/>
 <part name="PAD88" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD89" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD90" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD91" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD92" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD93" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD94" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD91" library="wirepad" deviceset="1,6/0,8" device="" value="RX"/>
 <part name="PAD97" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD98" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD99" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD100" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD101" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD102" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD103" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD100" library="wirepad" deviceset="1,6/0,8" device="" value="5"/>
 <part name="PAD106" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD107" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD108" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD109" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD110" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD111" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD112" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD109" library="wirepad" deviceset="1,6/0,8" device="" value="4"/>
 <part name="PAD115" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD116" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD117" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD118" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD119" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD120" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD121" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD118" library="wirepad" deviceset="1,6/0,8" device="" value="0"/>
 <part name="PAD124" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD125" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD126" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD127" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD128" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD129" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD130" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD127" library="wirepad" deviceset="1,6/0,8" device="" value="2"/>
 <part name="PAD133" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD134" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD135" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD136" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD137" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD138" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD139" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD136" library="wirepad" deviceset="1,6/0,8" device="" value="15"/>
 <part name="PAD142" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD143" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD144" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD145" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD146" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD147" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD148" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD151" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD152" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD153" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD154" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD155" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD156" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD157" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD160" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD161" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD162" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD163" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD164" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD165" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD166" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD145" library="wirepad" deviceset="1,6/0,8" device="" value="SC"/>
 <part name="PAD169" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD170" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD171" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -1024,20 +1289,10 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="PAD218" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD219" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD220" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD260" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD261" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD262" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD263" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD264" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD265" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD266" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD269" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD270" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD271" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD272" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD273" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD274" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD275" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD278" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD279" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD280" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -1066,63 +1321,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="PAD309" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD310" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD311" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD314" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD315" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD316" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD317" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD318" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD319" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD320" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD332" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD333" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD334" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD335" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD336" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD337" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD338" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD341" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD342" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD343" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD344" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD345" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD346" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD347" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD350" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD351" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD352" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD353" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD354" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD355" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD356" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD359" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD360" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD361" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD362" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD363" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD364" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD365" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD368" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD369" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD370" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD371" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD372" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD373" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD374" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD377" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD378" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD379" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD380" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD381" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD382" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD383" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD385" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD386" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD387" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD388" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD389" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD391" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD392" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD393" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD421" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD422" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD423" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -1162,14 +1360,11 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="PAD460" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD461" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD462" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD394" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="DC" library="dc-dc-converter" deviceset="R-78C*-1.0" device="" technology="1.8"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
-<part name="PAD1" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="PAD2" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD5" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD6" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD7" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -1212,9 +1407,77 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="PAD43" library="wirepad" deviceset="3,17/1,3" device=""/>
 <part name="PAD45" library="wirepad" deviceset="3,17/1,3" device=""/>
 <part name="PAD46" library="wirepad" deviceset="3,17/1,3" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="microbuilder" deviceset="USB" device="MICRO_20329"/>
+<part name="PAD3" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD37" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD41" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD44" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="JP3" library="adafruit" deviceset="PINHD-1X1" device="CB" value="TX"/>
+<part name="JP4" library="adafruit" deviceset="PINHD-1X1" device="CB" value="RX"/>
+<part name="JP5" library="adafruit" deviceset="PINHD-1X1" device="CB" value="GND"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
+<part name="X2" library="microbuilder" deviceset="USB" device="MICRO_20329"/>
+<part name="PAD47" library="wirepad" deviceset="1,6/0,8" device="" value="AC"/>
+<part name="PAD48" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD49" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD50" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD51" library="wirepad" deviceset="1,6/0,8" device="" value="CH"/>
+<part name="PAD52" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD53" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD54" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD55" library="wirepad" deviceset="1,6/0,8" device="" value="16"/>
+<part name="PAD56" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD57" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD58" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD59" library="wirepad" deviceset="1,6/0,8" device="" value="14"/>
+<part name="PAD60" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD61" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD62" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD63" library="wirepad" deviceset="1,6/0,8" device="" value="12"/>
+<part name="PAD64" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD65" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD66" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD67" library="wirepad" deviceset="1,6/0,8" device="" value="13"/>
+<part name="PAD68" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD69" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD70" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD75" library="wirepad" deviceset="1,6/0,8" device="" value="CS"/>
+<part name="PAD76" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD77" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD78" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="MDL1" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="PAD83" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD84" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD85" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD86" library="wirepad" deviceset="1,6/0,8" device="" value="SI"/>
+<part name="PAD87" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD92" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD93" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD94" library="wirepad" deviceset="1,6/0,8" device="" value="10"/>
+<part name="PAD95" library="wirepad" deviceset="1,6/0,8" device="" value="RS"/>
+<part name="PAD96" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD101" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD102" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD103" library="wirepad" deviceset="1,6/0,8" device="" value="SO"/>
+<part name="PAD104" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD105" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD110" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD111" library="wirepad" deviceset="1,6/0,8" device="" value="9"/>
+<part name="PAD112" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD113" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD114" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="VDD6" library="supply1" deviceset="VDD" device=""/>
+<part name="MIC5502" library="SparkFun-PowerIC" deviceset="MIC5205" device="3.3V"/>
+<part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="VDD4" library="supply1" deviceset="VDD" device=""/>
+<part name="PAD71" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD72" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD73" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="PAD74" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="5V" library="wirepad" deviceset="1,6/0,8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1231,16 +1494,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <attribute name="VALUE" x="92.837" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD82" gate="P" x="93.98" y="66.04" smashed="yes">
-<attribute name="VALUE" x="92.837" y="62.738" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD83" gate="P" x="93.98" y="60.96" smashed="yes">
-<attribute name="VALUE" x="92.837" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD84" gate="P" x="93.98" y="55.88" smashed="yes">
-<attribute name="VALUE" x="92.837" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD85" gate="P" x="93.98" y="50.8" smashed="yes">
-<attribute name="VALUE" x="92.837" y="47.498" size="1.778" layer="96"/>
+<attribute name="VALUE" x="87.757" y="65.278" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD88" gate="P" x="104.14" y="81.28" smashed="yes">
 <attribute name="VALUE" x="102.997" y="77.978" size="1.778" layer="96"/>
@@ -1252,16 +1506,7 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <attribute name="VALUE" x="102.997" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD91" gate="P" x="104.14" y="66.04" smashed="yes">
-<attribute name="VALUE" x="102.997" y="62.738" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD92" gate="P" x="104.14" y="60.96" smashed="yes">
-<attribute name="VALUE" x="102.997" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD93" gate="P" x="104.14" y="55.88" smashed="yes">
-<attribute name="VALUE" x="102.997" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD94" gate="P" x="104.14" y="50.8" smashed="yes">
-<attribute name="VALUE" x="102.997" y="47.498" size="1.778" layer="96"/>
+<attribute name="VALUE" x="97.917" y="65.278" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD97" gate="P" x="116.84" y="81.28" smashed="yes">
 <attribute name="VALUE" x="115.697" y="77.978" size="1.778" layer="96"/>
@@ -1275,15 +1520,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="PAD100" gate="P" x="116.84" y="66.04" smashed="yes">
 <attribute name="VALUE" x="115.697" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD101" gate="P" x="116.84" y="60.96" smashed="yes">
-<attribute name="VALUE" x="115.697" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD102" gate="P" x="116.84" y="55.88" smashed="yes">
-<attribute name="VALUE" x="115.697" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD103" gate="P" x="116.84" y="50.8" smashed="yes">
-<attribute name="VALUE" x="115.697" y="47.498" size="1.778" layer="96"/>
-</instance>
 <instance part="PAD106" gate="P" x="127" y="81.28" smashed="yes">
 <attribute name="VALUE" x="125.857" y="77.978" size="1.778" layer="96"/>
 </instance>
@@ -1295,15 +1531,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </instance>
 <instance part="PAD109" gate="P" x="127" y="66.04" smashed="yes">
 <attribute name="VALUE" x="125.857" y="62.738" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD110" gate="P" x="127" y="60.96" smashed="yes">
-<attribute name="VALUE" x="125.857" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD111" gate="P" x="127" y="55.88" smashed="yes">
-<attribute name="VALUE" x="125.857" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD112" gate="P" x="127" y="50.8" smashed="yes">
-<attribute name="VALUE" x="125.857" y="47.498" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD115" gate="P" x="134.62" y="81.28" smashed="yes">
 <attribute name="VALUE" x="133.477" y="77.978" size="1.778" layer="96"/>
@@ -1317,15 +1544,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="PAD118" gate="P" x="134.62" y="66.04" smashed="yes">
 <attribute name="VALUE" x="133.477" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD119" gate="P" x="134.62" y="60.96" smashed="yes">
-<attribute name="VALUE" x="133.477" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD120" gate="P" x="134.62" y="55.88" smashed="yes">
-<attribute name="VALUE" x="133.477" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD121" gate="P" x="134.62" y="50.8" smashed="yes">
-<attribute name="VALUE" x="133.477" y="47.498" size="1.778" layer="96"/>
-</instance>
 <instance part="PAD124" gate="P" x="144.78" y="81.28" smashed="yes">
 <attribute name="VALUE" x="143.637" y="77.978" size="1.778" layer="96"/>
 </instance>
@@ -1337,15 +1555,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </instance>
 <instance part="PAD127" gate="P" x="144.78" y="66.04" smashed="yes">
 <attribute name="VALUE" x="143.637" y="62.738" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD128" gate="P" x="144.78" y="60.96" smashed="yes">
-<attribute name="VALUE" x="143.637" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD129" gate="P" x="144.78" y="55.88" smashed="yes">
-<attribute name="VALUE" x="143.637" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD130" gate="P" x="144.78" y="50.8" smashed="yes">
-<attribute name="VALUE" x="143.637" y="47.498" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD133" gate="P" x="157.48" y="81.28" smashed="yes">
 <attribute name="VALUE" x="156.337" y="77.978" size="1.778" layer="96"/>
@@ -1359,15 +1568,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="PAD136" gate="P" x="157.48" y="66.04" smashed="yes">
 <attribute name="VALUE" x="156.337" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD137" gate="P" x="157.48" y="60.96" smashed="yes">
-<attribute name="VALUE" x="156.337" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD138" gate="P" x="157.48" y="55.88" smashed="yes">
-<attribute name="VALUE" x="156.337" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD139" gate="P" x="157.48" y="50.8" smashed="yes">
-<attribute name="VALUE" x="156.337" y="47.498" size="1.778" layer="96"/>
-</instance>
 <instance part="PAD142" gate="P" x="167.64" y="81.28" smashed="yes">
 <attribute name="VALUE" x="166.497" y="77.978" size="1.778" layer="96"/>
 </instance>
@@ -1380,479 +1580,227 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="PAD145" gate="P" x="167.64" y="66.04" smashed="yes">
 <attribute name="VALUE" x="166.497" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD146" gate="P" x="167.64" y="60.96" smashed="yes">
-<attribute name="VALUE" x="166.497" y="57.658" size="1.778" layer="96"/>
+<instance part="PAD169" gate="P" x="238.76" y="81.28" smashed="yes">
+<attribute name="VALUE" x="237.617" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD147" gate="P" x="167.64" y="55.88" smashed="yes">
-<attribute name="VALUE" x="166.497" y="52.578" size="1.778" layer="96"/>
+<instance part="PAD170" gate="P" x="238.76" y="76.2" smashed="yes">
+<attribute name="VALUE" x="237.617" y="72.898" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD148" gate="P" x="167.64" y="50.8" smashed="yes">
-<attribute name="VALUE" x="166.497" y="47.498" size="1.778" layer="96"/>
+<instance part="PAD171" gate="P" x="238.76" y="71.12" smashed="yes">
+<attribute name="VALUE" x="237.617" y="67.818" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD151" gate="P" x="180.34" y="81.28" smashed="yes">
-<attribute name="VALUE" x="179.197" y="77.978" size="1.778" layer="96"/>
+<instance part="PAD172" gate="P" x="238.76" y="66.04" smashed="yes">
+<attribute name="VALUE" x="237.617" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD152" gate="P" x="180.34" y="76.2" smashed="yes">
-<attribute name="VALUE" x="179.197" y="72.898" size="1.778" layer="96"/>
+<instance part="PAD173" gate="P" x="238.76" y="60.96" smashed="yes">
+<attribute name="VALUE" x="237.617" y="57.658" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD153" gate="P" x="180.34" y="71.12" smashed="yes">
-<attribute name="VALUE" x="179.197" y="67.818" size="1.778" layer="96"/>
+<instance part="PAD174" gate="P" x="238.76" y="55.88" smashed="yes">
+<attribute name="VALUE" x="237.617" y="52.578" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD154" gate="P" x="180.34" y="66.04" smashed="yes">
-<attribute name="VALUE" x="179.197" y="62.738" size="1.778" layer="96"/>
+<instance part="PAD175" gate="P" x="238.76" y="50.8" smashed="yes">
+<attribute name="VALUE" x="237.617" y="47.498" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD155" gate="P" x="180.34" y="60.96" smashed="yes">
-<attribute name="VALUE" x="179.197" y="57.658" size="1.778" layer="96"/>
+<instance part="PAD178" gate="P" x="248.92" y="81.28" smashed="yes">
+<attribute name="VALUE" x="247.777" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD156" gate="P" x="180.34" y="55.88" smashed="yes">
-<attribute name="VALUE" x="179.197" y="52.578" size="1.778" layer="96"/>
+<instance part="PAD179" gate="P" x="248.92" y="76.2" smashed="yes">
+<attribute name="VALUE" x="247.777" y="72.898" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD157" gate="P" x="180.34" y="50.8" smashed="yes">
-<attribute name="VALUE" x="179.197" y="47.498" size="1.778" layer="96"/>
+<instance part="PAD180" gate="P" x="248.92" y="71.12" smashed="yes">
+<attribute name="VALUE" x="247.777" y="67.818" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD160" gate="P" x="190.5" y="81.28" smashed="yes">
-<attribute name="VALUE" x="189.357" y="77.978" size="1.778" layer="96"/>
+<instance part="PAD181" gate="P" x="248.92" y="66.04" smashed="yes">
+<attribute name="VALUE" x="247.777" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD161" gate="P" x="190.5" y="76.2" smashed="yes">
-<attribute name="VALUE" x="189.357" y="72.898" size="1.778" layer="96"/>
+<instance part="PAD182" gate="P" x="248.92" y="60.96" smashed="yes">
+<attribute name="VALUE" x="247.777" y="57.658" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD162" gate="P" x="190.5" y="71.12" smashed="yes">
-<attribute name="VALUE" x="189.357" y="67.818" size="1.778" layer="96"/>
+<instance part="PAD183" gate="P" x="248.92" y="55.88" smashed="yes">
+<attribute name="VALUE" x="247.777" y="52.578" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD163" gate="P" x="190.5" y="66.04" smashed="yes">
-<attribute name="VALUE" x="189.357" y="62.738" size="1.778" layer="96"/>
+<instance part="PAD184" gate="P" x="248.92" y="50.8" smashed="yes">
+<attribute name="VALUE" x="247.777" y="47.498" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD164" gate="P" x="190.5" y="60.96" smashed="yes">
-<attribute name="VALUE" x="189.357" y="57.658" size="1.778" layer="96"/>
+<instance part="PAD187" gate="P" x="294.64" y="2.54" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD165" gate="P" x="190.5" y="55.88" smashed="yes">
-<attribute name="VALUE" x="189.357" y="52.578" size="1.778" layer="96"/>
+<instance part="PAD188" gate="P" x="294.64" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD166" gate="P" x="190.5" y="50.8" smashed="yes">
-<attribute name="VALUE" x="189.357" y="47.498" size="1.778" layer="96"/>
+<instance part="PAD189" gate="P" x="294.64" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD169" gate="P" x="203.2" y="81.28" smashed="yes">
-<attribute name="VALUE" x="202.057" y="77.978" size="1.778" layer="96"/>
+<instance part="PAD190" gate="P" x="294.64" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD170" gate="P" x="203.2" y="76.2" smashed="yes">
-<attribute name="VALUE" x="202.057" y="72.898" size="1.778" layer="96"/>
+<instance part="PAD191" gate="P" x="294.64" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD171" gate="P" x="203.2" y="71.12" smashed="yes">
-<attribute name="VALUE" x="202.057" y="67.818" size="1.778" layer="96"/>
+<instance part="PAD192" gate="P" x="294.64" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD172" gate="P" x="203.2" y="66.04" smashed="yes">
-<attribute name="VALUE" x="202.057" y="62.738" size="1.778" layer="96"/>
+<instance part="PAD193" gate="P" x="294.64" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="293.497" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD173" gate="P" x="203.2" y="60.96" smashed="yes">
-<attribute name="VALUE" x="202.057" y="57.658" size="1.778" layer="96"/>
+<instance part="PAD196" gate="P" x="304.8" y="2.54" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD174" gate="P" x="203.2" y="55.88" smashed="yes">
-<attribute name="VALUE" x="202.057" y="52.578" size="1.778" layer="96"/>
+<instance part="PAD197" gate="P" x="304.8" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD175" gate="P" x="203.2" y="50.8" smashed="yes">
-<attribute name="VALUE" x="202.057" y="47.498" size="1.778" layer="96"/>
+<instance part="PAD198" gate="P" x="304.8" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD178" gate="P" x="213.36" y="81.28" smashed="yes">
-<attribute name="VALUE" x="212.217" y="77.978" size="1.778" layer="96"/>
+<instance part="PAD199" gate="P" x="304.8" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD179" gate="P" x="213.36" y="76.2" smashed="yes">
-<attribute name="VALUE" x="212.217" y="72.898" size="1.778" layer="96"/>
+<instance part="PAD200" gate="P" x="304.8" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD180" gate="P" x="213.36" y="71.12" smashed="yes">
-<attribute name="VALUE" x="212.217" y="67.818" size="1.778" layer="96"/>
+<instance part="PAD201" gate="P" x="304.8" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD181" gate="P" x="213.36" y="66.04" smashed="yes">
-<attribute name="VALUE" x="212.217" y="62.738" size="1.778" layer="96"/>
+<instance part="PAD202" gate="P" x="304.8" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="303.657" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD182" gate="P" x="213.36" y="60.96" smashed="yes">
-<attribute name="VALUE" x="212.217" y="57.658" size="1.778" layer="96"/>
+<instance part="PAD205" gate="P" x="317.5" y="2.54" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD183" gate="P" x="213.36" y="55.88" smashed="yes">
-<attribute name="VALUE" x="212.217" y="52.578" size="1.778" layer="96"/>
+<instance part="PAD206" gate="P" x="317.5" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD184" gate="P" x="213.36" y="50.8" smashed="yes">
-<attribute name="VALUE" x="212.217" y="47.498" size="1.778" layer="96"/>
+<instance part="PAD207" gate="P" x="317.5" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD187" gate="P" x="45.72" y="25.4" smashed="yes">
-<attribute name="VALUE" x="44.577" y="22.098" size="1.778" layer="96"/>
+<instance part="PAD208" gate="P" x="317.5" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD188" gate="P" x="45.72" y="20.32" smashed="yes">
-<attribute name="VALUE" x="44.577" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD209" gate="P" x="317.5" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD189" gate="P" x="45.72" y="15.24" smashed="yes">
-<attribute name="VALUE" x="44.577" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD210" gate="P" x="317.5" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD190" gate="P" x="45.72" y="10.16" smashed="yes">
-<attribute name="VALUE" x="44.577" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD211" gate="P" x="317.5" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="316.357" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD191" gate="P" x="45.72" y="5.08" smashed="yes">
-<attribute name="VALUE" x="44.577" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD214" gate="P" x="327.66" y="2.54" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD192" gate="P" x="45.72" y="0" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD215" gate="P" x="327.66" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD193" gate="P" x="45.72" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD216" gate="P" x="327.66" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD196" gate="P" x="55.88" y="25.4" smashed="yes">
-<attribute name="VALUE" x="54.737" y="22.098" size="1.778" layer="96"/>
+<instance part="PAD217" gate="P" x="327.66" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD197" gate="P" x="55.88" y="20.32" smashed="yes">
-<attribute name="VALUE" x="54.737" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD218" gate="P" x="327.66" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD198" gate="P" x="55.88" y="15.24" smashed="yes">
-<attribute name="VALUE" x="54.737" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD219" gate="P" x="327.66" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD199" gate="P" x="55.88" y="10.16" smashed="yes">
-<attribute name="VALUE" x="54.737" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD220" gate="P" x="327.66" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="326.517" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD200" gate="P" x="55.88" y="5.08" smashed="yes">
-<attribute name="VALUE" x="54.737" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD269" gate="P" x="281.94" y="2.54" smashed="yes">
+<attribute name="VALUE" x="280.797" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD201" gate="P" x="55.88" y="0" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD270" gate="P" x="281.94" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="280.797" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD202" gate="P" x="55.88" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD271" gate="P" x="281.94" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="280.797" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD205" gate="P" x="68.58" y="25.4" smashed="yes">
-<attribute name="VALUE" x="67.437" y="22.098" size="1.778" layer="96"/>
+<instance part="PAD272" gate="P" x="281.94" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="280.797" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD206" gate="P" x="68.58" y="20.32" smashed="yes">
-<attribute name="VALUE" x="67.437" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD278" gate="P" x="228.6" y="2.54" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD207" gate="P" x="68.58" y="15.24" smashed="yes">
-<attribute name="VALUE" x="67.437" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD279" gate="P" x="228.6" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD208" gate="P" x="68.58" y="10.16" smashed="yes">
-<attribute name="VALUE" x="67.437" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD280" gate="P" x="228.6" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD209" gate="P" x="68.58" y="5.08" smashed="yes">
-<attribute name="VALUE" x="67.437" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD281" gate="P" x="228.6" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD210" gate="P" x="68.58" y="0" smashed="yes">
-<attribute name="VALUE" x="67.437" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD282" gate="P" x="228.6" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD211" gate="P" x="68.58" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="67.437" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD283" gate="P" x="228.6" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD214" gate="P" x="78.74" y="25.4" smashed="yes">
-<attribute name="VALUE" x="77.597" y="22.098" size="1.778" layer="96"/>
+<instance part="PAD284" gate="P" x="228.6" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD215" gate="P" x="78.74" y="20.32" smashed="yes">
-<attribute name="VALUE" x="77.597" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD287" gate="P" x="238.76" y="2.54" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD216" gate="P" x="78.74" y="15.24" smashed="yes">
-<attribute name="VALUE" x="77.597" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD288" gate="P" x="238.76" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD217" gate="P" x="78.74" y="10.16" smashed="yes">
-<attribute name="VALUE" x="77.597" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD289" gate="P" x="238.76" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD218" gate="P" x="78.74" y="5.08" smashed="yes">
-<attribute name="VALUE" x="77.597" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD290" gate="P" x="238.76" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD219" gate="P" x="78.74" y="0" smashed="yes">
-<attribute name="VALUE" x="77.597" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD291" gate="P" x="238.76" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD220" gate="P" x="78.74" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="77.597" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD292" gate="P" x="238.76" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD260" gate="P" x="132.08" y="20.32" smashed="yes">
-<attribute name="VALUE" x="130.937" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD293" gate="P" x="238.76" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD261" gate="P" x="132.08" y="15.24" smashed="yes">
-<attribute name="VALUE" x="130.937" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD296" gate="P" x="251.46" y="2.54" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD262" gate="P" x="132.08" y="10.16" smashed="yes">
-<attribute name="VALUE" x="130.937" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD297" gate="P" x="251.46" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD263" gate="P" x="132.08" y="5.08" smashed="yes">
-<attribute name="VALUE" x="130.937" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD298" gate="P" x="251.46" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD264" gate="P" x="132.08" y="0" smashed="yes">
-<attribute name="VALUE" x="130.937" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD299" gate="P" x="251.46" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD265" gate="P" x="132.08" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="130.937" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD300" gate="P" x="251.46" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD266" gate="P" x="132.08" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="130.937" y="-13.462" size="1.778" layer="96"/>
+<instance part="PAD301" gate="P" x="251.46" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD269" gate="P" x="142.24" y="20.32" smashed="yes">
-<attribute name="VALUE" x="141.097" y="17.018" size="1.778" layer="96"/>
+<instance part="PAD302" gate="P" x="251.46" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-31.242" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD270" gate="P" x="142.24" y="15.24" smashed="yes">
-<attribute name="VALUE" x="141.097" y="11.938" size="1.778" layer="96"/>
+<instance part="PAD305" gate="P" x="261.62" y="2.54" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-0.762" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD271" gate="P" x="142.24" y="10.16" smashed="yes">
-<attribute name="VALUE" x="141.097" y="6.858" size="1.778" layer="96"/>
+<instance part="PAD306" gate="P" x="261.62" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-5.842" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD272" gate="P" x="142.24" y="5.08" smashed="yes">
-<attribute name="VALUE" x="141.097" y="1.778" size="1.778" layer="96"/>
+<instance part="PAD307" gate="P" x="261.62" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-10.922" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD273" gate="P" x="142.24" y="0" smashed="yes">
-<attribute name="VALUE" x="141.097" y="-3.302" size="1.778" layer="96"/>
+<instance part="PAD308" gate="P" x="261.62" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-16.002" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD274" gate="P" x="142.24" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="141.097" y="-8.382" size="1.778" layer="96"/>
+<instance part="PAD309" gate="P" x="261.62" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD275" gate="P" x="142.24" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="141.097" y="-13.462" size="1.778" layer="96"/>
+<instance part="PAD310" gate="P" x="261.62" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD278" gate="P" x="154.94" y="20.32" smashed="yes">
-<attribute name="VALUE" x="153.797" y="17.018" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD279" gate="P" x="154.94" y="15.24" smashed="yes">
-<attribute name="VALUE" x="153.797" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD280" gate="P" x="154.94" y="10.16" smashed="yes">
-<attribute name="VALUE" x="153.797" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD281" gate="P" x="154.94" y="5.08" smashed="yes">
-<attribute name="VALUE" x="153.797" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD282" gate="P" x="154.94" y="0" smashed="yes">
-<attribute name="VALUE" x="153.797" y="-3.302" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD283" gate="P" x="154.94" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="153.797" y="-8.382" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD284" gate="P" x="154.94" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="153.797" y="-13.462" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD287" gate="P" x="165.1" y="20.32" smashed="yes">
-<attribute name="VALUE" x="163.957" y="17.018" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD288" gate="P" x="165.1" y="15.24" smashed="yes">
-<attribute name="VALUE" x="163.957" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD289" gate="P" x="165.1" y="10.16" smashed="yes">
-<attribute name="VALUE" x="163.957" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD290" gate="P" x="165.1" y="5.08" smashed="yes">
-<attribute name="VALUE" x="163.957" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD291" gate="P" x="165.1" y="0" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-3.302" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD292" gate="P" x="165.1" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-8.382" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD293" gate="P" x="165.1" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-13.462" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD296" gate="P" x="177.8" y="20.32" smashed="yes">
-<attribute name="VALUE" x="176.657" y="17.018" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD297" gate="P" x="177.8" y="15.24" smashed="yes">
-<attribute name="VALUE" x="176.657" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD298" gate="P" x="177.8" y="10.16" smashed="yes">
-<attribute name="VALUE" x="176.657" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD299" gate="P" x="177.8" y="5.08" smashed="yes">
-<attribute name="VALUE" x="176.657" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD300" gate="P" x="177.8" y="0" smashed="yes">
-<attribute name="VALUE" x="176.657" y="-3.302" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD301" gate="P" x="177.8" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="176.657" y="-8.382" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD302" gate="P" x="177.8" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="176.657" y="-13.462" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD305" gate="P" x="187.96" y="20.32" smashed="yes">
-<attribute name="VALUE" x="186.817" y="17.018" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD306" gate="P" x="187.96" y="15.24" smashed="yes">
-<attribute name="VALUE" x="186.817" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD307" gate="P" x="187.96" y="10.16" smashed="yes">
-<attribute name="VALUE" x="186.817" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD308" gate="P" x="187.96" y="5.08" smashed="yes">
-<attribute name="VALUE" x="186.817" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD309" gate="P" x="187.96" y="0" smashed="yes">
-<attribute name="VALUE" x="186.817" y="-3.302" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD310" gate="P" x="187.96" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="186.817" y="-8.382" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD311" gate="P" x="187.96" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="186.817" y="-13.462" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD314" gate="P" x="200.66" y="20.32" smashed="yes">
-<attribute name="VALUE" x="199.517" y="17.018" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD315" gate="P" x="200.66" y="15.24" smashed="yes">
-<attribute name="VALUE" x="199.517" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD316" gate="P" x="200.66" y="10.16" smashed="yes">
-<attribute name="VALUE" x="199.517" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD317" gate="P" x="200.66" y="5.08" smashed="yes">
-<attribute name="VALUE" x="199.517" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD318" gate="P" x="200.66" y="0" smashed="yes">
-<attribute name="VALUE" x="199.517" y="-3.302" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD319" gate="P" x="200.66" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="199.517" y="-8.382" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD320" gate="P" x="200.66" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="199.517" y="-13.462" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD332" gate="P" x="45.72" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD333" gate="P" x="45.72" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD334" gate="P" x="45.72" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD335" gate="P" x="45.72" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD336" gate="P" x="45.72" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD337" gate="P" x="45.72" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD338" gate="P" x="45.72" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="44.577" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD341" gate="P" x="55.88" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD342" gate="P" x="55.88" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD343" gate="P" x="55.88" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD344" gate="P" x="55.88" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD345" gate="P" x="55.88" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD346" gate="P" x="55.88" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD347" gate="P" x="55.88" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="54.737" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD350" gate="P" x="63.5" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD351" gate="P" x="63.5" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD352" gate="P" x="63.5" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD353" gate="P" x="63.5" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD354" gate="P" x="63.5" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD355" gate="P" x="63.5" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD356" gate="P" x="63.5" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="62.357" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD359" gate="P" x="73.66" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD360" gate="P" x="73.66" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD361" gate="P" x="73.66" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD362" gate="P" x="73.66" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD363" gate="P" x="73.66" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD364" gate="P" x="73.66" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD365" gate="P" x="73.66" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="72.517" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD368" gate="P" x="86.36" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD369" gate="P" x="86.36" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD370" gate="P" x="86.36" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD371" gate="P" x="86.36" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD372" gate="P" x="86.36" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD373" gate="P" x="86.36" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD374" gate="P" x="86.36" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="85.217" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD377" gate="P" x="96.52" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD378" gate="P" x="96.52" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD379" gate="P" x="96.52" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD380" gate="P" x="96.52" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD381" gate="P" x="96.52" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD382" gate="P" x="96.52" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD383" gate="P" x="96.52" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="95.377" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD385" gate="P" x="109.22" y="-22.86" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-26.162" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD386" gate="P" x="109.22" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD387" gate="P" x="109.22" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD388" gate="P" x="109.22" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD389" gate="P" x="109.22" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD391" gate="P" x="109.22" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD392" gate="P" x="109.22" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD393" gate="P" x="109.22" y="-63.5" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-66.802" size="1.778" layer="96"/>
+<instance part="PAD311" gate="P" x="261.62" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-31.242" size="1.778" layer="96"/>
 </instance>
 <instance part="PAD421" gate="P" x="10.16" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="9.017" y="-18.542" size="1.778" layer="96"/>
@@ -1912,77 +1860,68 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <attribute name="VALUE" x="21.717" y="-13.462" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="12.7" y="-76.2"/>
-<instance part="PAD442" gate="P" x="-7.62" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="-8.763" y="-56.642" size="1.778" layer="96"/>
+<instance part="PAD442" gate="P" x="0" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-56.642" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD443" gate="P" x="-15.24" y="-17.78" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-21.082" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD444" gate="P" x="-15.24" y="-22.86" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-26.162" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD445" gate="P" x="-15.24" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD446" gate="P" x="-15.24" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-46.482" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD447" gate="P" x="-15.24" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD448" gate="P" x="-15.24" y="-53.34" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-56.642" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD449" gate="P" x="-15.24" y="-63.5" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-66.802" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD450" gate="P" x="-15.24" y="-58.42" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-61.722" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD451" gate="P" x="-15.24" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD452" gate="P" x="-15.24" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-41.402" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD453" gate="P" x="-15.24" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="-16.383" y="-16.002" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD454" gate="P" x="-7.62" y="-17.78" smashed="yes">
+<instance part="PAD443" gate="P" x="-7.62" y="-17.78" smashed="yes">
 <attribute name="VALUE" x="-8.763" y="-21.082" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD455" gate="P" x="-7.62" y="-48.26" smashed="yes">
-<attribute name="VALUE" x="-8.763" y="-51.562" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD456" gate="P" x="-7.62" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="-8.763" y="-31.242" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD459" gate="P" x="-7.62" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="-8.763" y="-36.322" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD460" gate="P" x="-7.62" y="-22.86" smashed="yes">
+<instance part="PAD444" gate="P" x="-7.62" y="-22.86" smashed="yes">
 <attribute name="VALUE" x="-8.763" y="-26.162" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD461" gate="P" x="-7.62" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="-8.763" y="-41.402" size="1.778" layer="96"/>
+<instance part="PAD445" gate="P" x="-7.62" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-36.322" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD462" gate="P" x="-7.62" y="-43.18" smashed="yes">
+<instance part="PAD446" gate="P" x="-7.62" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="-8.763" y="-46.482" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD394" gate="P" x="109.22" y="-68.58" smashed="yes">
-<attribute name="VALUE" x="108.077" y="-71.882" size="1.778" layer="96"/>
+<instance part="PAD447" gate="P" x="-7.62" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-51.562" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD448" gate="P" x="-7.62" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-56.642" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD449" gate="P" x="-7.62" y="-63.5" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-66.802" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD450" gate="P" x="-7.62" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-61.722" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD451" gate="P" x="-7.62" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-31.242" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD452" gate="P" x="-7.62" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-41.402" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD453" gate="P" x="-7.62" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="-8.763" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD454" gate="P" x="0" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD455" gate="P" x="0" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-51.562" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD456" gate="P" x="0" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-31.242" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD459" gate="P" x="0" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-36.322" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD460" gate="P" x="0" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-26.162" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD461" gate="P" x="0" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-41.402" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD462" gate="P" x="0" y="-43.18" smashed="yes">
+<attribute name="VALUE" x="-1.143" y="-46.482" size="1.778" layer="96"/>
 </instance>
 <instance part="DC" gate="G$1" x="-27.94" y="63.5"/>
 <instance part="GND4" gate="1" x="-27.94" y="48.26"/>
 <instance part="SUPPLY4" gate="G$1" x="-45.72" y="66.04"/>
 <instance part="VDD1" gate="G$1" x="-7.62" y="71.12"/>
-<instance part="VDD3" gate="G$1" x="-12.7" y="-78.74" rot="R180"/>
-<instance part="PAD1" gate="P" x="88.9" y="25.4" smashed="yes">
-<attribute name="VALUE" x="87.757" y="22.098" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD2" gate="P" x="88.9" y="20.32" smashed="yes">
-<attribute name="VALUE" x="87.757" y="17.018" size="1.778" layer="96"/>
-</instance>
+<instance part="VDD3" gate="G$1" x="-5.08" y="-78.74" rot="R180"/>
 <instance part="PAD5" gate="P" x="15.24" y="101.6" smashed="yes">
 <attribute name="VALUE" x="14.097" y="98.298" size="1.778" layer="96"/>
 </instance>
@@ -2081,541 +2020,499 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <attribute name="VALUE" x="47.117" y="103.378" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="38.1" y="40.64"/>
-<instance part="PAD34" gate="1" x="165.1" y="-30.48" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-33.782" size="1.778" layer="96"/>
+<instance part="PAD34" gate="1" x="241.3" y="-45.72" smashed="yes">
+<attribute name="VALUE" x="240.157" y="-49.022" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD35" gate="1" x="165.1" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-36.322" size="1.778" layer="96"/>
+<instance part="PAD35" gate="1" x="241.3" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="240.157" y="-51.562" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD39" gate="1" x="157.48" y="-30.48" smashed="yes">
-<attribute name="VALUE" x="156.337" y="-33.782" size="1.778" layer="96"/>
+<instance part="PAD39" gate="1" x="233.68" y="-45.72" smashed="yes">
+<attribute name="VALUE" x="232.537" y="-49.022" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD40" gate="1" x="157.48" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="156.337" y="-36.322" size="1.778" layer="96"/>
+<instance part="PAD40" gate="1" x="233.68" y="-48.26" smashed="yes">
+<attribute name="VALUE" x="232.537" y="-51.562" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD42" gate="1" x="157.48" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="156.337" y="-41.402" size="1.778" layer="96"/>
+<instance part="PAD42" gate="1" x="233.68" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="232.537" y="-56.642" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD43" gate="1" x="157.48" y="-40.64" smashed="yes">
-<attribute name="VALUE" x="156.337" y="-43.942" size="1.778" layer="96"/>
+<instance part="PAD43" gate="1" x="233.68" y="-55.88" smashed="yes">
+<attribute name="VALUE" x="232.537" y="-59.182" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD45" gate="1" x="165.1" y="-38.1" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-41.402" size="1.778" layer="96"/>
+<instance part="PAD45" gate="1" x="241.3" y="-53.34" smashed="yes">
+<attribute name="VALUE" x="240.157" y="-56.642" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD46" gate="1" x="165.1" y="-40.64" smashed="yes">
-<attribute name="VALUE" x="163.957" y="-43.942" size="1.778" layer="96"/>
+<instance part="PAD46" gate="1" x="241.3" y="-55.88" smashed="yes">
+<attribute name="VALUE" x="240.157" y="-59.182" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="-25.4" y="38.1"/>
-<instance part="GND3" gate="1" x="-25.4" y="17.78"/>
-<instance part="X1" gate="G$1" x="-48.26" y="27.94"/>
+<instance part="GND3" gate="1" x="-48.26" y="30.48"/>
+<instance part="PAD3" gate="P" x="271.78" y="2.54" smashed="yes">
+<attribute name="VALUE" x="270.637" y="-0.762" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD37" gate="P" x="271.78" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="270.637" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD41" gate="P" x="271.78" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="270.637" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD44" gate="P" x="271.78" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="270.637" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="JP3" gate="G$1" x="-5.08" y="7.62" smashed="yes">
+<attribute name="VALUE" x="-1.27" y="7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="JP4" gate="G$1" x="-5.08" y="2.54" smashed="yes">
+<attribute name="VALUE" x="-1.27" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="JP5" gate="G$1" x="-5.08" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="-1.27" y="-2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND6" gate="1" x="-20.32" y="-7.62"/>
+<instance part="SUPPLY1" gate="G$1" x="-48.26" y="45.72"/>
+<instance part="X2" gate="G$1" x="-66.04" y="38.1"/>
+<instance part="PAD47" gate="P" x="96.52" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="95.377" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD48" gate="P" x="96.52" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="95.377" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD49" gate="P" x="96.52" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="95.377" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD50" gate="P" x="96.52" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="95.377" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD51" gate="P" x="106.68" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="105.537" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD52" gate="P" x="106.68" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="105.537" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD53" gate="P" x="106.68" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="105.537" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD54" gate="P" x="106.68" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="105.537" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD55" gate="P" x="119.38" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="118.237" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD56" gate="P" x="119.38" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="118.237" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD57" gate="P" x="119.38" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="118.237" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD58" gate="P" x="119.38" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="118.237" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD59" gate="P" x="129.54" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="128.397" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD60" gate="P" x="129.54" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="128.397" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD61" gate="P" x="129.54" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="128.397" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD62" gate="P" x="129.54" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="128.397" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD63" gate="P" x="137.16" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="136.017" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD64" gate="P" x="137.16" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="136.017" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD65" gate="P" x="137.16" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="136.017" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD66" gate="P" x="137.16" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="136.017" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD67" gate="P" x="147.32" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="146.177" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD68" gate="P" x="147.32" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="146.177" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD69" gate="P" x="147.32" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="146.177" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD70" gate="P" x="147.32" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="146.177" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD75" gate="P" x="170.18" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="169.037" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD76" gate="P" x="170.18" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="169.037" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD77" gate="P" x="170.18" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="169.037" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD78" gate="P" x="170.18" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="169.037" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="MDL1" gate="G$1" x="121.92" y="43.18" rot="R90"/>
+<instance part="GND7" gate="1" x="139.7" y="53.34" rot="R90"/>
+<instance part="PAD83" gate="P" x="175.26" y="81.28" smashed="yes">
+<attribute name="VALUE" x="174.117" y="77.978" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD84" gate="P" x="175.26" y="76.2" smashed="yes">
+<attribute name="VALUE" x="174.117" y="72.898" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD85" gate="P" x="175.26" y="71.12" smashed="yes">
+<attribute name="VALUE" x="174.117" y="67.818" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD86" gate="P" x="175.26" y="66.04" smashed="yes">
+<attribute name="VALUE" x="174.117" y="62.738" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD87" gate="P" x="182.88" y="81.28" smashed="yes">
+<attribute name="VALUE" x="181.737" y="77.978" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD92" gate="P" x="182.88" y="76.2" smashed="yes">
+<attribute name="VALUE" x="181.737" y="72.898" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD93" gate="P" x="182.88" y="71.12" smashed="yes">
+<attribute name="VALUE" x="181.737" y="67.818" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD94" gate="P" x="182.88" y="66.04" smashed="yes">
+<attribute name="VALUE" x="181.737" y="62.738" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD95" gate="P" x="88.9" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="87.757" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD96" gate="P" x="88.9" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="87.757" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD101" gate="P" x="88.9" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="87.757" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD102" gate="P" x="88.9" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="87.757" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD103" gate="P" x="177.8" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="176.657" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD104" gate="P" x="177.8" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="176.657" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD105" gate="P" x="177.8" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="176.657" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD110" gate="P" x="177.8" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="176.657" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD111" gate="P" x="187.96" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="186.817" y="-5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD112" gate="P" x="187.96" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="186.817" y="-10.922" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD113" gate="P" x="187.96" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="186.817" y="-16.002" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD114" gate="P" x="187.96" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="186.817" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="VDD6" gate="G$1" x="152.4" y="20.32" rot="R270"/>
+<instance part="MIC5502" gate="G$1" x="-50.8" y="91.44"/>
+<instance part="SUPPLY2" gate="G$1" x="-68.58" y="99.06"/>
+<instance part="GND5" gate="1" x="-68.58" y="81.28"/>
+<instance part="VDD4" gate="G$1" x="-35.56" y="104.14"/>
+<instance part="PAD71" gate="P" x="228.6" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="227.457" y="-36.322" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD72" gate="P" x="238.76" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="237.617" y="-36.322" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD73" gate="P" x="251.46" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="250.317" y="-36.322" size="1.778" layer="96"/>
+</instance>
+<instance part="PAD74" gate="P" x="261.62" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="260.477" y="-36.322" size="1.778" layer="96"/>
+</instance>
+<instance part="5V" gate="P" x="-40.64" y="43.18" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-39.497" y="46.482" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$7" class="0">
-<segment>
-<pinref part="PAD79" gate="P" pin="P"/>
-<pinref part="PAD80" gate="P" pin="P"/>
-<wire x1="96.52" y1="81.28" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD81" gate="P" pin="P"/>
-<wire x1="96.52" y1="76.2" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="PAD82" gate="P" pin="P"/>
-<wire x1="96.52" y1="71.12" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD83" gate="P" pin="P"/>
-<wire x1="96.52" y1="66.04" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD84" gate="P" pin="P"/>
-<wire x1="96.52" y1="60.96" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD85" gate="P" pin="P"/>
-<wire x1="96.52" y1="55.88" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="PAD88" gate="P" pin="P"/>
-<pinref part="PAD89" gate="P" pin="P"/>
-<wire x1="106.68" y1="81.28" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD90" gate="P" pin="P"/>
-<wire x1="106.68" y1="76.2" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="PAD91" gate="P" pin="P"/>
-<wire x1="106.68" y1="71.12" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD92" gate="P" pin="P"/>
-<wire x1="106.68" y1="66.04" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD93" gate="P" pin="P"/>
-<wire x1="106.68" y1="60.96" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD94" gate="P" pin="P"/>
-<wire x1="106.68" y1="55.88" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="PAD97" gate="P" pin="P"/>
-<pinref part="PAD98" gate="P" pin="P"/>
-<wire x1="119.38" y1="81.28" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD99" gate="P" pin="P"/>
-<wire x1="119.38" y1="76.2" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD100" gate="P" pin="P"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD101" gate="P" pin="P"/>
-<wire x1="119.38" y1="66.04" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD102" gate="P" pin="P"/>
-<wire x1="119.38" y1="60.96" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD103" gate="P" pin="P"/>
-<wire x1="119.38" y1="55.88" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO5"/>
+<wire x1="119.38" y1="53.34" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD99" gate="P" pin="P"/>
+<pinref part="PAD98" gate="P" pin="P"/>
+<pinref part="PAD97" gate="P" pin="P"/>
+<wire x1="119.38" y1="81.28" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="76.2" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="66.04" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="PAD106" gate="P" pin="P"/>
-<pinref part="PAD107" gate="P" pin="P"/>
-<wire x1="129.54" y1="81.28" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD108" gate="P" pin="P"/>
-<wire x1="129.54" y1="76.2" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD109" gate="P" pin="P"/>
-<wire x1="129.54" y1="71.12" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD110" gate="P" pin="P"/>
-<wire x1="129.54" y1="66.04" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD111" gate="P" pin="P"/>
-<wire x1="129.54" y1="60.96" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD112" gate="P" pin="P"/>
-<wire x1="129.54" y1="55.88" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO4"/>
+<wire x1="121.92" y1="53.34" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="63.5" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD108" gate="P" pin="P"/>
+<pinref part="PAD107" gate="P" pin="P"/>
+<pinref part="PAD106" gate="P" pin="P"/>
+<wire x1="129.54" y1="81.28" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="76.2" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="66.04" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="PAD115" gate="P" pin="P"/>
-<pinref part="PAD116" gate="P" pin="P"/>
-<wire x1="137.16" y1="81.28" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD117" gate="P" pin="P"/>
-<wire x1="137.16" y1="76.2" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD118" gate="P" pin="P"/>
-<wire x1="137.16" y1="71.12" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD119" gate="P" pin="P"/>
-<wire x1="137.16" y1="66.04" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD120" gate="P" pin="P"/>
-<wire x1="137.16" y1="60.96" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD121" gate="P" pin="P"/>
-<wire x1="137.16" y1="55.88" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO0"/>
+<wire x1="124.46" y1="53.34" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="60.96" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD117" gate="P" pin="P"/>
+<pinref part="PAD116" gate="P" pin="P"/>
+<pinref part="PAD115" gate="P" pin="P"/>
+<wire x1="137.16" y1="81.28" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="76.2" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="66.04" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="PAD124" gate="P" pin="P"/>
-<pinref part="PAD125" gate="P" pin="P"/>
-<wire x1="147.32" y1="81.28" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD126" gate="P" pin="P"/>
-<wire x1="147.32" y1="76.2" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD127" gate="P" pin="P"/>
-<wire x1="147.32" y1="71.12" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD128" gate="P" pin="P"/>
-<wire x1="147.32" y1="66.04" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD129" gate="P" pin="P"/>
-<wire x1="147.32" y1="60.96" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD130" gate="P" pin="P"/>
-<wire x1="147.32" y1="55.88" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO2"/>
+<wire x1="127" y1="53.34" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="127" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="58.42" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD126" gate="P" pin="P"/>
+<pinref part="PAD125" gate="P" pin="P"/>
+<pinref part="PAD124" gate="P" pin="P"/>
+<wire x1="147.32" y1="81.28" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="76.2" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="66.04" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="PAD133" gate="P" pin="P"/>
-<pinref part="PAD134" gate="P" pin="P"/>
-<wire x1="160.02" y1="81.28" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD135" gate="P" pin="P"/>
-<wire x1="160.02" y1="76.2" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD136" gate="P" pin="P"/>
-<wire x1="160.02" y1="71.12" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD137" gate="P" pin="P"/>
-<wire x1="160.02" y1="66.04" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD138" gate="P" pin="P"/>
-<wire x1="160.02" y1="60.96" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD139" gate="P" pin="P"/>
-<wire x1="160.02" y1="55.88" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO15"/>
+<wire x1="129.54" y1="53.34" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="55.88" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD135" gate="P" pin="P"/>
+<pinref part="PAD134" gate="P" pin="P"/>
+<pinref part="PAD133" gate="P" pin="P"/>
+<wire x1="160.02" y1="81.28" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="76.2" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="66.04" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="PAD142" gate="P" pin="P"/>
-<pinref part="PAD143" gate="P" pin="P"/>
-<wire x1="170.18" y1="81.28" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD144" gate="P" pin="P"/>
-<wire x1="170.18" y1="76.2" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD145" gate="P" pin="P"/>
-<wire x1="170.18" y1="71.12" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD146" gate="P" pin="P"/>
-<wire x1="170.18" y1="66.04" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD147" gate="P" pin="P"/>
-<wire x1="170.18" y1="60.96" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD148" gate="P" pin="P"/>
-<wire x1="170.18" y1="55.88" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="PAD151" gate="P" pin="P"/>
-<pinref part="PAD152" gate="P" pin="P"/>
-<wire x1="182.88" y1="81.28" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD153" gate="P" pin="P"/>
-<wire x1="182.88" y1="76.2" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="PAD154" gate="P" pin="P"/>
-<wire x1="182.88" y1="71.12" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD155" gate="P" pin="P"/>
-<wire x1="182.88" y1="66.04" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD156" gate="P" pin="P"/>
-<wire x1="182.88" y1="60.96" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD157" gate="P" pin="P"/>
-<wire x1="182.88" y1="55.88" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="PAD160" gate="P" pin="P"/>
-<pinref part="PAD161" gate="P" pin="P"/>
-<wire x1="193.04" y1="81.28" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD162" gate="P" pin="P"/>
-<wire x1="193.04" y1="76.2" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="PAD163" gate="P" pin="P"/>
-<wire x1="193.04" y1="71.12" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PAD164" gate="P" pin="P"/>
-<wire x1="193.04" y1="66.04" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="PAD165" gate="P" pin="P"/>
-<wire x1="193.04" y1="60.96" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PAD166" gate="P" pin="P"/>
-<wire x1="193.04" y1="55.88" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="SCLK"/>
+<wire x1="147.32" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="43.18" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD144" gate="P" pin="P"/>
+<pinref part="PAD143" gate="P" pin="P"/>
+<pinref part="PAD142" gate="P" pin="P"/>
+<wire x1="170.18" y1="81.28" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="76.2" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="66.04" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="PAD169" gate="P" pin="P"/>
 <pinref part="PAD170" gate="P" pin="P"/>
-<wire x1="205.74" y1="81.28" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="81.28" x2="241.3" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="PAD171" gate="P" pin="P"/>
-<wire x1="205.74" y1="76.2" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="76.2" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD172" gate="P" pin="P"/>
-<wire x1="205.74" y1="71.12" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="71.12" x2="241.3" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="PAD173" gate="P" pin="P"/>
-<wire x1="205.74" y1="66.04" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="66.04" x2="241.3" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="PAD174" gate="P" pin="P"/>
-<wire x1="205.74" y1="60.96" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="60.96" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="PAD175" gate="P" pin="P"/>
-<wire x1="205.74" y1="55.88" x2="205.74" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="55.88" x2="241.3" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="PAD178" gate="P" pin="P"/>
 <pinref part="PAD179" gate="P" pin="P"/>
-<wire x1="215.9" y1="81.28" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="81.28" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="PAD180" gate="P" pin="P"/>
-<wire x1="215.9" y1="76.2" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="76.2" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="PAD181" gate="P" pin="P"/>
-<wire x1="215.9" y1="71.12" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="71.12" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="PAD182" gate="P" pin="P"/>
-<wire x1="215.9" y1="66.04" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="66.04" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="PAD183" gate="P" pin="P"/>
-<wire x1="215.9" y1="60.96" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="60.96" x2="251.46" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="PAD184" gate="P" pin="P"/>
-<wire x1="215.9" y1="55.88" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="55.88" x2="251.46" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="PAD187" gate="P" pin="P"/>
 <pinref part="PAD188" gate="P" pin="P"/>
-<wire x1="48.26" y1="25.4" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="2.54" x2="297.18" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD189" gate="P" pin="P"/>
-<wire x1="48.26" y1="20.32" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-2.54" x2="297.18" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD190" gate="P" pin="P"/>
-<wire x1="48.26" y1="15.24" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-7.62" x2="297.18" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD191" gate="P" pin="P"/>
-<wire x1="48.26" y1="10.16" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-12.7" x2="297.18" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD192" gate="P" pin="P"/>
-<wire x1="48.26" y1="5.08" x2="48.26" y2="0" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-17.78" x2="297.18" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD193" gate="P" pin="P"/>
-<wire x1="48.26" y1="0" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-22.86" x2="297.18" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="PAD196" gate="P" pin="P"/>
 <pinref part="PAD197" gate="P" pin="P"/>
-<wire x1="58.42" y1="25.4" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="2.54" x2="307.34" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD198" gate="P" pin="P"/>
-<wire x1="58.42" y1="20.32" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-2.54" x2="307.34" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD199" gate="P" pin="P"/>
-<wire x1="58.42" y1="15.24" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-7.62" x2="307.34" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD200" gate="P" pin="P"/>
-<wire x1="58.42" y1="10.16" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-12.7" x2="307.34" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD201" gate="P" pin="P"/>
-<wire x1="58.42" y1="5.08" x2="58.42" y2="0" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-17.78" x2="307.34" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD202" gate="P" pin="P"/>
-<wire x1="58.42" y1="0" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-22.86" x2="307.34" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="PAD205" gate="P" pin="P"/>
 <pinref part="PAD206" gate="P" pin="P"/>
-<wire x1="71.12" y1="25.4" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="2.54" x2="320.04" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD207" gate="P" pin="P"/>
-<wire x1="71.12" y1="20.32" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-2.54" x2="320.04" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD208" gate="P" pin="P"/>
-<wire x1="71.12" y1="15.24" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-7.62" x2="320.04" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD209" gate="P" pin="P"/>
-<wire x1="71.12" y1="10.16" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-12.7" x2="320.04" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD210" gate="P" pin="P"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-17.78" x2="320.04" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD211" gate="P" pin="P"/>
-<wire x1="71.12" y1="0" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-22.86" x2="320.04" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="PAD214" gate="P" pin="P"/>
 <pinref part="PAD215" gate="P" pin="P"/>
-<wire x1="81.28" y1="25.4" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="2.54" x2="330.2" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD216" gate="P" pin="P"/>
-<wire x1="81.28" y1="20.32" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-2.54" x2="330.2" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD217" gate="P" pin="P"/>
-<wire x1="81.28" y1="15.24" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-7.62" x2="330.2" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD218" gate="P" pin="P"/>
-<wire x1="81.28" y1="10.16" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-12.7" x2="330.2" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD219" gate="P" pin="P"/>
-<wire x1="81.28" y1="5.08" x2="81.28" y2="0" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-17.78" x2="330.2" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD220" gate="P" pin="P"/>
-<wire x1="81.28" y1="0" x2="81.28" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="PAD260" gate="P" pin="P"/>
-<pinref part="PAD261" gate="P" pin="P"/>
-<wire x1="134.62" y1="20.32" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="PAD262" gate="P" pin="P"/>
-<wire x1="134.62" y1="15.24" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="PAD263" gate="P" pin="P"/>
-<wire x1="134.62" y1="10.16" x2="134.62" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="PAD264" gate="P" pin="P"/>
-<wire x1="134.62" y1="5.08" x2="134.62" y2="0" width="0.1524" layer="91"/>
-<pinref part="PAD265" gate="P" pin="P"/>
-<wire x1="134.62" y1="0" x2="134.62" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="PAD266" gate="P" pin="P"/>
-<wire x1="134.62" y1="-5.08" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-22.86" x2="330.2" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="PAD269" gate="P" pin="P"/>
 <pinref part="PAD270" gate="P" pin="P"/>
-<wire x1="144.78" y1="20.32" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="2.54" x2="284.48" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD271" gate="P" pin="P"/>
-<wire x1="144.78" y1="15.24" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-2.54" x2="284.48" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD272" gate="P" pin="P"/>
-<wire x1="144.78" y1="10.16" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="PAD273" gate="P" pin="P"/>
-<wire x1="144.78" y1="5.08" x2="144.78" y2="0" width="0.1524" layer="91"/>
-<pinref part="PAD274" gate="P" pin="P"/>
-<wire x1="144.78" y1="0" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="PAD275" gate="P" pin="P"/>
-<wire x1="144.78" y1="-5.08" x2="144.78" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-7.62" x2="284.48" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="PAD278" gate="P" pin="P"/>
 <pinref part="PAD279" gate="P" pin="P"/>
-<wire x1="157.48" y1="20.32" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="2.54" x2="231.14" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD280" gate="P" pin="P"/>
-<wire x1="157.48" y1="15.24" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-2.54" x2="231.14" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD281" gate="P" pin="P"/>
-<wire x1="157.48" y1="10.16" x2="157.48" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-7.62" x2="231.14" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD282" gate="P" pin="P"/>
-<wire x1="157.48" y1="5.08" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-12.7" x2="231.14" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD283" gate="P" pin="P"/>
-<wire x1="157.48" y1="0" x2="157.48" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-17.78" x2="231.14" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD284" gate="P" pin="P"/>
-<wire x1="157.48" y1="-5.08" x2="157.48" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-22.86" x2="231.14" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="PAD71" gate="P" pin="P"/>
+<wire x1="231.14" y1="-33.02" x2="231.14" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="PAD287" gate="P" pin="P"/>
 <pinref part="PAD288" gate="P" pin="P"/>
-<wire x1="167.64" y1="20.32" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="2.54" x2="241.3" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD289" gate="P" pin="P"/>
-<wire x1="167.64" y1="15.24" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-2.54" x2="241.3" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD290" gate="P" pin="P"/>
-<wire x1="167.64" y1="10.16" x2="167.64" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-7.62" x2="241.3" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD291" gate="P" pin="P"/>
-<wire x1="167.64" y1="5.08" x2="167.64" y2="0" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-12.7" x2="241.3" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD292" gate="P" pin="P"/>
-<wire x1="167.64" y1="0" x2="167.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-17.78" x2="241.3" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD293" gate="P" pin="P"/>
-<wire x1="167.64" y1="-5.08" x2="167.64" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-22.86" x2="241.3" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="PAD72" gate="P" pin="P"/>
+<wire x1="241.3" y1="-33.02" x2="241.3" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="PAD296" gate="P" pin="P"/>
 <pinref part="PAD297" gate="P" pin="P"/>
-<wire x1="180.34" y1="20.32" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="254" y1="2.54" x2="254" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD298" gate="P" pin="P"/>
-<wire x1="180.34" y1="15.24" x2="180.34" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="254" y1="-2.54" x2="254" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD299" gate="P" pin="P"/>
-<wire x1="180.34" y1="10.16" x2="180.34" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="254" y1="-7.62" x2="254" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD300" gate="P" pin="P"/>
-<wire x1="180.34" y1="5.08" x2="180.34" y2="0" width="0.1524" layer="91"/>
+<wire x1="254" y1="-12.7" x2="254" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD301" gate="P" pin="P"/>
-<wire x1="180.34" y1="0" x2="180.34" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="254" y1="-17.78" x2="254" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD302" gate="P" pin="P"/>
-<wire x1="180.34" y1="-5.08" x2="180.34" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="254" y1="-22.86" x2="254" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="PAD73" gate="P" pin="P"/>
+<wire x1="254" y1="-33.02" x2="254" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="PAD305" gate="P" pin="P"/>
 <pinref part="PAD306" gate="P" pin="P"/>
-<wire x1="190.5" y1="20.32" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="2.54" x2="264.16" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="PAD307" gate="P" pin="P"/>
-<wire x1="190.5" y1="15.24" x2="190.5" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-2.54" x2="264.16" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="PAD308" gate="P" pin="P"/>
-<wire x1="190.5" y1="10.16" x2="190.5" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-7.62" x2="264.16" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="PAD309" gate="P" pin="P"/>
-<wire x1="190.5" y1="5.08" x2="190.5" y2="0" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-12.7" x2="264.16" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD310" gate="P" pin="P"/>
-<wire x1="190.5" y1="0" x2="190.5" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-17.78" x2="264.16" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD311" gate="P" pin="P"/>
-<wire x1="190.5" y1="-5.08" x2="190.5" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="PAD314" gate="P" pin="P"/>
-<pinref part="PAD315" gate="P" pin="P"/>
-<wire x1="203.2" y1="20.32" x2="203.2" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="PAD316" gate="P" pin="P"/>
-<wire x1="203.2" y1="15.24" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="PAD317" gate="P" pin="P"/>
-<wire x1="203.2" y1="10.16" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="PAD318" gate="P" pin="P"/>
-<wire x1="203.2" y1="5.08" x2="203.2" y2="0" width="0.1524" layer="91"/>
-<pinref part="PAD319" gate="P" pin="P"/>
-<wire x1="203.2" y1="0" x2="203.2" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="PAD320" gate="P" pin="P"/>
-<wire x1="203.2" y1="-5.08" x2="203.2" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="PAD332" gate="P" pin="P"/>
-<pinref part="PAD333" gate="P" pin="P"/>
-<wire x1="48.26" y1="-27.94" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD334" gate="P" pin="P"/>
-<wire x1="48.26" y1="-33.02" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD335" gate="P" pin="P"/>
-<wire x1="48.26" y1="-38.1" x2="48.26" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD336" gate="P" pin="P"/>
-<wire x1="48.26" y1="-43.18" x2="48.26" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD337" gate="P" pin="P"/>
-<wire x1="48.26" y1="-48.26" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD338" gate="P" pin="P"/>
-<wire x1="48.26" y1="-53.34" x2="48.26" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="PAD341" gate="P" pin="P"/>
-<pinref part="PAD342" gate="P" pin="P"/>
-<wire x1="58.42" y1="-27.94" x2="58.42" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD343" gate="P" pin="P"/>
-<wire x1="58.42" y1="-33.02" x2="58.42" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD344" gate="P" pin="P"/>
-<wire x1="58.42" y1="-38.1" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD345" gate="P" pin="P"/>
-<wire x1="58.42" y1="-43.18" x2="58.42" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD346" gate="P" pin="P"/>
-<wire x1="58.42" y1="-48.26" x2="58.42" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD347" gate="P" pin="P"/>
-<wire x1="58.42" y1="-53.34" x2="58.42" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="PAD350" gate="P" pin="P"/>
-<pinref part="PAD351" gate="P" pin="P"/>
-<wire x1="66.04" y1="-27.94" x2="66.04" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD352" gate="P" pin="P"/>
-<wire x1="66.04" y1="-33.02" x2="66.04" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD353" gate="P" pin="P"/>
-<wire x1="66.04" y1="-38.1" x2="66.04" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD354" gate="P" pin="P"/>
-<wire x1="66.04" y1="-43.18" x2="66.04" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD355" gate="P" pin="P"/>
-<wire x1="66.04" y1="-48.26" x2="66.04" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD356" gate="P" pin="P"/>
-<wire x1="66.04" y1="-53.34" x2="66.04" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="PAD359" gate="P" pin="P"/>
-<pinref part="PAD360" gate="P" pin="P"/>
-<wire x1="76.2" y1="-27.94" x2="76.2" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD361" gate="P" pin="P"/>
-<wire x1="76.2" y1="-33.02" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD362" gate="P" pin="P"/>
-<wire x1="76.2" y1="-38.1" x2="76.2" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD363" gate="P" pin="P"/>
-<wire x1="76.2" y1="-43.18" x2="76.2" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD364" gate="P" pin="P"/>
-<wire x1="76.2" y1="-48.26" x2="76.2" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD365" gate="P" pin="P"/>
-<wire x1="76.2" y1="-53.34" x2="76.2" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="PAD368" gate="P" pin="P"/>
-<pinref part="PAD369" gate="P" pin="P"/>
-<wire x1="88.9" y1="-27.94" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD370" gate="P" pin="P"/>
-<wire x1="88.9" y1="-33.02" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD371" gate="P" pin="P"/>
-<wire x1="88.9" y1="-38.1" x2="88.9" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD372" gate="P" pin="P"/>
-<wire x1="88.9" y1="-43.18" x2="88.9" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD373" gate="P" pin="P"/>
-<wire x1="88.9" y1="-48.26" x2="88.9" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD374" gate="P" pin="P"/>
-<wire x1="88.9" y1="-53.34" x2="88.9" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="PAD377" gate="P" pin="P"/>
-<pinref part="PAD378" gate="P" pin="P"/>
-<wire x1="99.06" y1="-27.94" x2="99.06" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD379" gate="P" pin="P"/>
-<wire x1="99.06" y1="-33.02" x2="99.06" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD380" gate="P" pin="P"/>
-<wire x1="99.06" y1="-38.1" x2="99.06" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="PAD381" gate="P" pin="P"/>
-<wire x1="99.06" y1="-43.18" x2="99.06" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="PAD382" gate="P" pin="P"/>
-<wire x1="99.06" y1="-48.26" x2="99.06" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="PAD383" gate="P" pin="P"/>
-<wire x1="99.06" y1="-53.34" x2="99.06" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="PAD385" gate="P" pin="P"/>
-<pinref part="PAD386" gate="P" pin="P"/>
-<wire x1="111.76" y1="-22.86" x2="111.76" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="PAD387" gate="P" pin="P"/>
-<wire x1="111.76" y1="-27.94" x2="111.76" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="PAD388" gate="P" pin="P"/>
-<wire x1="111.76" y1="-33.02" x2="111.76" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="PAD389" gate="P" pin="P"/>
-<wire x1="111.76" y1="-38.1" x2="111.76" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-22.86" x2="264.16" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="PAD74" gate="P" pin="P"/>
+<wire x1="264.16" y1="-33.02" x2="264.16" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2705,10 +2602,26 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <wire x1="38.1" y1="43.18" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-7.62" y1="-2.54" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-2.54" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="-25.4" y1="20.32" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="20.32" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
+<wire x1="-48.26" y1="33.02" x2="-55.88" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="MDL1" gate="G$1" pin="GND"/>
+<wire x1="137.16" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="MIC5502" gate="G$1" pin="GND"/>
+<wire x1="-60.96" y1="86.36" x2="-68.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="86.36" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2718,66 +2631,66 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <wire x1="-45.72" y1="63.5" x2="-40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="X2" gate="G$1" pin="VBUS"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<pinref part="X1" gate="G$1" pin="VBUS"/>
-<wire x1="-25.4" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="35.56" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="43.18" x2="-48.26" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="5V" gate="P" pin="P"/>
+<wire x1="-43.18" y1="43.18" x2="-48.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-48.26" y="43.18"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="PAD391" gate="P" pin="P"/>
-<pinref part="PAD392" gate="P" pin="P"/>
-<wire x1="111.76" y1="-53.34" x2="111.76" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="PAD393" gate="P" pin="P"/>
-<wire x1="111.76" y1="-58.42" x2="111.76" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="PAD394" gate="P" pin="P"/>
-<wire x1="111.76" y1="-63.5" x2="111.76" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="MIC5502" gate="G$1" pin="IN"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="-60.96" y1="96.52" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="MIC5502" gate="G$1" pin="EN"/>
+<wire x1="-60.96" y1="91.44" x2="-68.58" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="91.44" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-68.58" y="96.52"/>
 </segment>
 </net>
 <net name="VDD" class="0">
 <segment>
 <pinref part="PAD449" gate="P" pin="P"/>
 <pinref part="PAD450" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-63.5" x2="-5.08" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="PAD448" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-58.42" x2="-12.7" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-58.42" x2="-5.08" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="PAD447" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-53.34" x2="-12.7" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-53.34" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="PAD446" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-48.26" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-48.26" x2="-5.08" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="PAD452" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-43.18" x2="-5.08" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="PAD445" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-38.1" x2="-12.7" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-38.1" x2="-5.08" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="PAD451" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-33.02" x2="-12.7" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="PAD444" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-27.94" x2="-12.7" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD443" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-22.86" x2="-5.08" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="PAD453" gate="P" pin="P"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-12.7" x2="-10.16" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-12.7" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="PAD454" gate="P" pin="P"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-17.78" x2="2.54" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="PAD460" gate="P" pin="P"/>
 <pinref part="PAD456" gate="P" pin="P"/>
-<wire x1="-5.08" y1="-22.86" x2="-5.08" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-27.94" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="PAD459" gate="P" pin="P"/>
 <pinref part="PAD455" gate="P" pin="P"/>
 <pinref part="PAD462" gate="P" pin="P"/>
-<wire x1="-5.08" y1="-48.26" x2="-5.08" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-48.26" x2="2.54" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="PAD461" gate="P" pin="P"/>
-<wire x1="-5.08" y1="-43.18" x2="-5.08" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-38.1" x2="-5.08" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-43.18" x2="2.54" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-38.1" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="PAD442" gate="P" pin="P"/>
-<wire x1="-5.08" y1="-53.34" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-53.34" x2="2.54" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="VDD3" gate="G$1" pin="VDD"/>
-<wire x1="-12.7" y1="-63.5" x2="-12.7" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-63.5" x2="-5.08" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DC" gate="G$1" pin="VOUT"/>
@@ -2822,40 +2735,270 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<pinref part="PAD2" gate="P" pin="P"/>
-<pinref part="PAD1" gate="P" pin="P"/>
-<wire x1="91.44" y1="20.32" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="VDD6" gate="G$1" pin="VDD"/>
+<pinref part="MDL1" gate="G$1" pin="VCC"/>
+<wire x1="149.86" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MIC5502" gate="G$1" pin="OUT"/>
+<pinref part="VDD4" gate="G$1" pin="VDD"/>
+<wire x1="-43.18" y1="96.52" x2="-35.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="96.52" x2="-35.56" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="PAD34" gate="1" pin="P"/>
 <pinref part="PAD35" gate="1" pin="P"/>
-<wire x1="167.64" y1="-30.48" x2="167.64" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-45.72" x2="243.84" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="PAD39" gate="1" pin="P"/>
 <pinref part="PAD40" gate="1" pin="P"/>
-<wire x1="160.02" y1="-30.48" x2="160.02" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-45.72" x2="236.22" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="PAD42" gate="1" pin="P"/>
 <pinref part="PAD43" gate="1" pin="P"/>
-<wire x1="160.02" y1="-38.1" x2="160.02" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-53.34" x2="236.22" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="PAD45" gate="1" pin="P"/>
 <pinref part="PAD46" gate="1" pin="P"/>
-<wire x1="167.64" y1="-38.1" x2="167.64" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-53.34" x2="243.84" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PAD3" gate="P" pin="P"/>
+<pinref part="PAD37" gate="P" pin="P"/>
+<wire x1="274.32" y1="2.54" x2="274.32" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="PAD41" gate="P" pin="P"/>
+<wire x1="274.32" y1="-2.54" x2="274.32" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="PAD44" gate="P" pin="P"/>
+<wire x1="274.32" y1="-7.62" x2="274.32" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="PAD59" gate="P" pin="P"/>
+<wire x1="132.08" y1="-2.54" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO14"/>
+<wire x1="132.08" y1="12.7" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="12.7" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="PAD62" gate="P" pin="P"/>
+<pinref part="PAD61" gate="P" pin="P"/>
+<pinref part="PAD60" gate="P" pin="P"/>
+<wire x1="132.08" y1="-7.62" x2="132.08" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-12.7" x2="132.08" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-2.54" x2="132.08" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="PAD75" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="CS0"/>
+<wire x1="147.32" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="30.48" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="PAD78" gate="P" pin="P"/>
+<pinref part="PAD77" gate="P" pin="P"/>
+<pinref part="PAD76" gate="P" pin="P"/>
+<wire x1="172.72" y1="-7.62" x2="172.72" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-12.7" x2="172.72" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-2.54" x2="172.72" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="PAD86" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="MOSI"/>
+<wire x1="147.32" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="40.64" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD85" gate="P" pin="P"/>
+<pinref part="PAD84" gate="P" pin="P"/>
+<pinref part="PAD83" gate="P" pin="P"/>
+<wire x1="177.8" y1="81.28" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="76.2" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="66.04" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="PAD94" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO10"/>
+<wire x1="147.32" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="38.1" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PAD93" gate="P" pin="P"/>
+<pinref part="PAD92" gate="P" pin="P"/>
+<pinref part="PAD87" gate="P" pin="P"/>
+<wire x1="185.42" y1="81.28" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="76.2" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="66.04" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="PAD111" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO9"/>
+<wire x1="147.32" y1="35.56" x2="190.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="35.56" x2="190.5" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="PAD114" gate="P" pin="P"/>
+<pinref part="PAD113" gate="P" pin="P"/>
+<pinref part="PAD112" gate="P" pin="P"/>
+<wire x1="190.5" y1="-7.62" x2="190.5" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-12.7" x2="190.5" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-2.54" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="PAD102" gate="P" pin="P"/>
+<pinref part="PAD101" gate="P" pin="P"/>
+<pinref part="PAD96" gate="P" pin="P"/>
+<wire x1="91.44" y1="-7.62" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-12.7" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD95" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="REST"/>
+<wire x1="114.3" y1="20.32" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="12.7" x2="91.44" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-7.62" x2="91.44" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="PAD50" gate="P" pin="P"/>
+<pinref part="PAD49" gate="P" pin="P"/>
+<pinref part="PAD48" gate="P" pin="P"/>
+<wire x1="99.06" y1="-7.62" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-12.7" x2="99.06" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD47" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="ADC"/>
+<wire x1="116.84" y1="20.32" x2="116.84" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="7.62" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-7.62" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="PAD54" gate="P" pin="P"/>
+<pinref part="PAD53" gate="P" pin="P"/>
+<pinref part="PAD52" gate="P" pin="P"/>
+<wire x1="109.22" y1="-7.62" x2="109.22" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-12.7" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD51" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="CH_PD"/>
+<wire x1="119.38" y1="20.32" x2="119.38" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="2.54" x2="109.22" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="2.54" x2="109.22" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-7.62" x2="109.22" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="PAD58" gate="P" pin="P"/>
+<pinref part="PAD57" gate="P" pin="P"/>
+<pinref part="PAD56" gate="P" pin="P"/>
+<wire x1="121.92" y1="-7.62" x2="121.92" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-12.7" x2="121.92" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD55" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO16"/>
+<wire x1="121.92" y1="20.32" x2="121.92" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-7.62" x2="121.92" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="PAD66" gate="P" pin="P"/>
+<pinref part="PAD65" gate="P" pin="P"/>
+<pinref part="PAD64" gate="P" pin="P"/>
+<wire x1="139.7" y1="-7.62" x2="139.7" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-12.7" x2="139.7" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD63" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO12"/>
+<wire x1="127" y1="20.32" x2="127" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="127" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="15.24" x2="139.7" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-7.62" x2="139.7" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="PAD70" gate="P" pin="P"/>
+<pinref part="PAD69" gate="P" pin="P"/>
+<pinref part="PAD68" gate="P" pin="P"/>
+<wire x1="149.86" y1="-7.62" x2="149.86" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-12.7" x2="149.86" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD67" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="GPIO13"/>
+<wire x1="129.54" y1="20.32" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="17.78" x2="149.86" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-7.62" x2="149.86" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="PAD110" gate="P" pin="P"/>
+<pinref part="PAD105" gate="P" pin="P"/>
+<pinref part="PAD104" gate="P" pin="P"/>
+<wire x1="180.34" y1="-7.62" x2="180.34" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-12.7" x2="180.34" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD103" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="MISO"/>
+<wire x1="147.32" y1="33.02" x2="180.34" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="33.02" x2="180.34" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-7.62" x2="180.34" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="PAD82" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="TXD"/>
+<wire x1="114.3" y1="53.34" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="58.42" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
+<label x="96.52" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="PAD81" gate="P" pin="P"/>
+<pinref part="PAD80" gate="P" pin="P"/>
+<pinref part="PAD79" gate="P" pin="P"/>
+<wire x1="96.52" y1="81.28" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="76.2" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="66.04" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
+<label x="-33.02" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="PAD91" gate="P" pin="P"/>
+<pinref part="MDL1" gate="G$1" pin="RXD"/>
+<wire x1="116.84" y1="53.34" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="60.96" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<label x="106.68" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="PAD90" gate="P" pin="P"/>
+<pinref part="PAD89" gate="P" pin="P"/>
+<pinref part="PAD88" gate="P" pin="P"/>
+<wire x1="106.68" y1="81.28" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="66.04" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
+<label x="-33.02" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

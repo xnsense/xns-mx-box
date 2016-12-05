@@ -8,3 +8,9 @@
 *.zip
 
 *.lck
+
+*.job
+
+*.dri
+
+*.gpi
