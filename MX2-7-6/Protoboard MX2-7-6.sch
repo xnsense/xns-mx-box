@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -467,6 +467,95 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-PowerIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="V-REG-LDO">
+<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="9.144" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-10.16" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="BP" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MIC5205" prefix="U" uservalue="yes">
+<description>MIC5205 150mA vreg&lt;br&gt;
+3.3V - VREG-00822&lt;br&gt;
+5V - VREG-00823</description>
+<gates>
+<gate name="G$1" symbol="V-REG-LDO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3.3V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-00822"/>
+</technology>
+</technologies>
+</device>
+<device name="5V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-00823"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -781,6 +870,10 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <part name="JP1" library="daspilker" deviceset="USB-RECEPTABLE" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="VDD4" library="supply1" deviceset="VDD" device=""/>
+<part name="U2" library="SparkFun-PowerIC" deviceset="MIC5205" device="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -1674,6 +1767,10 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <instance part="JP1" gate="G$1" x="-12.7" y="27.94"/>
 <instance part="SUPPLY1" gate="G$1" x="-25.4" y="38.1"/>
 <instance part="GND3" gate="1" x="-25.4" y="17.78"/>
+<instance part="SUPPLY2" gate="G$1" x="-71.12" y="50.8"/>
+<instance part="GND5" gate="1" x="-71.12" y="27.94"/>
+<instance part="VDD4" gate="G$1" x="-43.18" y="50.8"/>
+<instance part="U2" gate="G$1" x="-55.88" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -2276,6 +2373,12 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <wire x1="-20.32" y1="22.86" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="22.86" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-71.12" y1="30.48" x2="-71.12" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="-71.12" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2288,6 +2391,16 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="-20.32" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="33.02" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="EN"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="-66.04" y1="40.64" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="40.64" x2="-71.12" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="IN"/>
+<wire x1="-71.12" y1="45.72" x2="-71.12" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="45.72" x2="-71.12" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-71.12" y="45.72"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2387,6 +2500,12 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 <wire x1="25.4" y1="81.28" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="OUT"/>
+<pinref part="VDD4" gate="G$1" pin="VDD"/>
+<wire x1="-48.26" y1="45.72" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="45.72" x2="-43.18" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
