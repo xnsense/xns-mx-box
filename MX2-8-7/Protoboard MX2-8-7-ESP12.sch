@@ -1682,13 +1682,11 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="JP8" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP9" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP10" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
-<part name="JP11" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP12" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP13" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP14" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP15" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP16" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
-<part name="JP17" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="MDL1" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E"/>
 <part name="J39" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
@@ -2014,13 +2012,11 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="JP8" gate="G$1" x="152.4" y="-66.04"/>
 <instance part="JP9" gate="G$1" x="162.56" y="-66.04"/>
 <instance part="JP10" gate="G$1" x="172.72" y="-66.04"/>
-<instance part="JP11" gate="G$1" x="182.88" y="-66.04"/>
 <instance part="JP12" gate="G$1" x="129.54" y="-76.2" rot="R270"/>
 <instance part="JP13" gate="G$1" x="139.7" y="-76.2" rot="R270"/>
 <instance part="JP14" gate="G$1" x="149.86" y="-76.2" rot="R270"/>
 <instance part="JP15" gate="G$1" x="160.02" y="-76.2" rot="R270"/>
 <instance part="JP16" gate="G$1" x="170.18" y="-76.2" rot="R270"/>
-<instance part="JP17" gate="G$1" x="180.34" y="-76.2" rot="R270"/>
 <instance part="MDL1" gate="G$1" x="91.44" y="12.7" rot="R90"/>
 <instance part="J39" gate="G$1" x="68.58" y="40.64"/>
 <instance part="J2" gate="G$1" x="83.82" y="40.64"/>
@@ -2724,13 +2720,6 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="JP16" gate="G$1" pin="1"/>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="-73.66" x2="170.18" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="JP17" gate="G$1" pin="1"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="-73.66" x2="180.34" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

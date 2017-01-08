@@ -1116,13 +1116,11 @@ With round pins</description>
 <part name="JP8" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP9" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP10" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
-<part name="JP11" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP12" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP13" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP14" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP15" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 <part name="JP16" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
-<part name="JP17" library="adafruit" deviceset="PINHD-1X1" device="-BIGPOGO"/>
 </parts>
 <sheets>
 <sheet>
@@ -1439,13 +1437,11 @@ With round pins</description>
 <instance part="JP8" gate="G$1" x="152.4" y="-27.94"/>
 <instance part="JP9" gate="G$1" x="162.56" y="-27.94"/>
 <instance part="JP10" gate="G$1" x="172.72" y="-27.94"/>
-<instance part="JP11" gate="G$1" x="182.88" y="-27.94"/>
 <instance part="JP12" gate="G$1" x="129.54" y="-38.1" rot="R270"/>
 <instance part="JP13" gate="G$1" x="139.7" y="-38.1" rot="R270"/>
 <instance part="JP14" gate="G$1" x="149.86" y="-38.1" rot="R270"/>
 <instance part="JP15" gate="G$1" x="160.02" y="-38.1" rot="R270"/>
 <instance part="JP16" gate="G$1" x="170.18" y="-38.1" rot="R270"/>
-<instance part="JP17" gate="G$1" x="180.34" y="-38.1" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2514,13 +2510,6 @@ With round pins</description>
 <pinref part="JP16" gate="G$1" pin="1"/>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="-35.56" x2="170.18" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="JP17" gate="G$1" pin="1"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="-35.56" x2="180.34" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

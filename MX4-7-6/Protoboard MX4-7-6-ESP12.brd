@@ -919,8 +919,8 @@ design rules under a new name.</description>
 <element name="JP5" library="adafruit" package="1X01-CLEANBIG" value="GND" x="26.035" y="26.67" smashed="yes">
 <attribute name="VALUE" x="27.445" y="25.975" size="0.6096" layer="27" rot="R200"/>
 </element>
-<element name="X2" library="microbuilder" package="4UCONN_20329" value="" x="48.6" y="25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="55.01" y="22.622" size="0.4064" layer="27" ratio="10" rot="R90"/>
+<element name="X2" library="microbuilder" package="4UCONN_20329" value="" x="48.65" y="25.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="55.06" y="22.622" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="MDL1" library="ESP8266-ESP12E" package="ESP8266-ESP12E" value="" x="13.07" y="29.39" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.23" y="26.77" size="1.27" layer="21" rot="R180"/>
@@ -1207,8 +1207,8 @@ design rules under a new name.</description>
 <contactref element="MIC5502" pad="1"/>
 <contactref element="MIC5502" pad="3"/>
 <contactref element="5V" pad="1"/>
-<wire x1="47.825" y1="24.1" x2="44.45" y2="31.115" width="0" layer="19" extent="1-1"/>
-<wire x1="48.8208625" y1="16.211459375" x2="47.825" y2="24.1" width="0" layer="19" extent="1-1"/>
+<wire x1="47.875" y1="24.1" x2="44.45" y2="31.115" width="0" layer="19" extent="1-1"/>
+<wire x1="48.8208625" y1="16.211459375" x2="47.875" y2="24.1" width="0" layer="19" extent="1-1"/>
 <wire x1="47.33" y1="11.3399" x2="48.8208625" y2="16.211459375" width="0" layer="19" extent="1-1"/>
 <wire x1="45.43" y1="11.3399" x2="47.33" y2="11.3399" width="0" layer="19" extent="1-1"/>
 </signal>
