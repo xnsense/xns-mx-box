@@ -4108,7 +4108,7 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND" library="SparkFun-Connectors" deviceset="M16" device="1X16_NO_SILK"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="VDD5" library="supply1" deviceset="VDD" device=""/>
-<part name="VDD" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
+<part name="VDD" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK" value="GND"/>
 <part name="3.3V" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
