@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -466,146 +466,6 @@ Source: &lt;a href="http://www.mikrocontroller.net/attachment/150645/157764-da-0
 </deviceset>
 </devicesets>
 </library>
-<library name="ESP8266-ESP12E">
-<packages>
-<package name="ESP8266-ESP12E">
-<description>
-&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
-The author cannot warrant that this library is free from error
-or will meet your specific requirements.&lt;p&gt;
-&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
-</description>
-<wire x1="8.58" y1="-10.16" x2="8.58" y2="13.94" width="0.127" layer="21"/>
-<wire x1="8.58" y1="13.94" x2="-7.62" y2="13.94" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="13.94" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
-<smd name="8" x="-7.62" y="-8.16" dx="2" dy="1.2" layer="1"/>
-<smd name="7" x="-7.62" y="-6.16" dx="2" dy="1.2" layer="1"/>
-<smd name="6" x="-7.62" y="-4.16" dx="2" dy="1.2" layer="1"/>
-<smd name="5" x="-7.62" y="-2.16" dx="2" dy="1.2" layer="1"/>
-<smd name="4" x="-7.62" y="-0.16" dx="2" dy="1.2" layer="1"/>
-<smd name="3" x="-7.62" y="1.84" dx="2" dy="1.2" layer="1"/>
-<smd name="2" x="-7.62" y="3.84" dx="2" dy="1.2" layer="1"/>
-<smd name="1" x="-7.62" y="5.84" dx="2" dy="1.2" layer="1"/>
-<smd name="9" x="8.58" y="-8.16" dx="2" dy="1.2" layer="1"/>
-<smd name="10" x="8.58" y="-6.16" dx="2" dy="1.2" layer="1"/>
-<smd name="11" x="8.58" y="-4.16" dx="2" dy="1.2" layer="1"/>
-<smd name="12" x="8.58" y="-2.16" dx="2" dy="1.2" layer="1"/>
-<smd name="13" x="8.58" y="-0.16" dx="2" dy="1.2" layer="1"/>
-<smd name="14" x="8.58" y="1.84" dx="2" dy="1.2" layer="1"/>
-<smd name="15" x="8.58" y="3.84" dx="2" dy="1.2" layer="1"/>
-<smd name="16" x="8.58" y="5.84" dx="2" dy="1.2" layer="1"/>
-<text x="-2.62" y="-8.16" size="1.27" layer="21" rot="R90">&gt;NAME</text>
-<text x="-2.62" y="0.95" size="1.27" layer="21">ESP-12E</text>
-<wire x1="-5.08" y1="6.35" x2="-5.08" y2="7.62" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="12.7" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="12.7" x2="-3.81" y2="12.7" width="0.127" layer="51"/>
-<wire x1="-3.81" y1="12.7" x2="-3.81" y2="8.89" width="0.127" layer="51"/>
-<wire x1="-3.81" y1="8.89" x2="-2.54" y2="8.89" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="8.89" x2="-2.54" y2="12.7" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="12.7" x2="-1.27" y2="12.7" width="0.127" layer="51"/>
-<wire x1="-1.27" y1="12.7" x2="-1.27" y2="8.89" width="0.127" layer="51"/>
-<wire x1="-1.27" y1="8.89" x2="0" y2="8.89" width="0.127" layer="51"/>
-<wire x1="0" y1="8.89" x2="0" y2="12.7" width="0.127" layer="51"/>
-<wire x1="0" y1="12.7" x2="1.27" y2="12.7" width="0.127" layer="51"/>
-<wire x1="1.27" y1="12.7" x2="1.27" y2="8.89" width="0.127" layer="51"/>
-<wire x1="1.27" y1="8.89" x2="2.54" y2="8.89" width="0.127" layer="51"/>
-<wire x1="2.54" y1="8.89" x2="2.54" y2="12.7" width="0.127" layer="51"/>
-<wire x1="2.54" y1="12.7" x2="6.35" y2="12.7" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="51"/>
-<smd name="21" x="3.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<smd name="17" x="-4.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<smd name="18" x="-2.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<wire x1="-7.62" y1="-10.16" x2="8.58" y2="-10.16" width="0.127" layer="21"/>
-<smd name="22" x="5.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<smd name="19" x="-0.62" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<smd name="20" x="1.38" y="-10.16" dx="2" dy="1.2" layer="1" rot="R90"/>
-<rectangle x1="-7.62" y1="6.985" x2="8.89" y2="13.97" layer="42"/>
-<rectangle x1="-7.62" y1="6.985" x2="8.89" y2="13.97" layer="41"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ESP12E">
-<description>
-&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
-The author cannot warrant that this library is free from error
-or will meet your specific requirements.&lt;p&gt;
-&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
-</description>
-<pin name="GND" x="10.16" y="-10.16" length="middle" rot="R180"/>
-<pin name="GPIO15" x="10.16" y="-7.62" length="middle" rot="R180"/>
-<pin name="GPIO2" x="10.16" y="-5.08" length="middle" rot="R180"/>
-<pin name="GPIO0" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="GPIO4" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="GPIO5" x="10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="RXD" x="10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="TXD" x="10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="REST" x="-22.86" y="7.62" length="middle"/>
-<pin name="ADC" x="-22.86" y="5.08" length="middle"/>
-<pin name="CH_PD" x="-22.86" y="2.54" length="middle"/>
-<pin name="GPIO16" x="-22.86" y="0" length="middle"/>
-<pin name="GPIO14" x="-22.86" y="-2.54" length="middle"/>
-<pin name="GPIO12" x="-22.86" y="-5.08" length="middle"/>
-<pin name="GPIO13" x="-22.86" y="-7.62" length="middle"/>
-<pin name="VCC" x="-22.86" y="-10.16" length="middle"/>
-<wire x1="-17.78" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-20.32" x2="5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
-<text x="-15.24" y="10.16" size="1.27" layer="94">ESP8266_ESP12E</text>
-<text x="-10.16" y="12.7" size="1.27" layer="94">&gt;NAME</text>
-<pin name="CS0" x="-12.7" y="-25.4" length="middle" rot="R90"/>
-<pin name="MISO" x="-10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="GPIO9" x="-7.62" y="-25.4" length="middle" rot="R90"/>
-<pin name="GPIO10" x="-5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="MOSI" x="-2.54" y="-25.4" length="middle" rot="R90"/>
-<pin name="SCLK" x="0" y="-25.4" length="middle" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ESP8266-12E" prefix="MDL" uservalue="yes">
-<description>
-&lt;b&gt;ESP8266-12E with additional I/O and GPIO04/05 corrected&lt;/b&gt;&lt;p&gt;
-The author cannot warrant that this library is free from error
-or will meet your specific requirements.&lt;p&gt;
-&lt;author&gt;Created by PuceBaboon.com. Komagane, Nagano, JAPAN&lt;/author&gt;
-</description>
-<gates>
-<gate name="G$1" symbol="ESP12E" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="ESP8266-ESP12E" package="ESP8266-ESP12E">
-<connects>
-<connect gate="G$1" pin="ADC" pad="2"/>
-<connect gate="G$1" pin="CH_PD" pad="3"/>
-<connect gate="G$1" pin="CS0" pad="17"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="GPIO0" pad="12"/>
-<connect gate="G$1" pin="GPIO10" pad="20"/>
-<connect gate="G$1" pin="GPIO12" pad="6"/>
-<connect gate="G$1" pin="GPIO13" pad="7"/>
-<connect gate="G$1" pin="GPIO14" pad="5"/>
-<connect gate="G$1" pin="GPIO15" pad="10"/>
-<connect gate="G$1" pin="GPIO16" pad="4"/>
-<connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="13"/>
-<connect gate="G$1" pin="GPIO5" pad="14"/>
-<connect gate="G$1" pin="GPIO9" pad="19"/>
-<connect gate="G$1" pin="MISO" pad="18"/>
-<connect gate="G$1" pin="MOSI" pad="21"/>
-<connect gate="G$1" pin="REST" pad="1"/>
-<connect gate="G$1" pin="RXD" pad="15"/>
-<connect gate="G$1" pin="SCLK" pad="22"/>
-<connect gate="G$1" pin="TXD" pad="16"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="microbuilder">
 <packages>
 <package name="4UCONN_20329">
@@ -1037,6 +897,43 @@ or will meet your specific requirements.&lt;p&gt;
 <hole x="-2.2" y="1" drill="1"/>
 <hole x="2.2" y="1" drill="1"/>
 </package>
+<package name="ESP-12E">
+<wire x1="-8" y1="14.27" x2="8" y2="14.27" width="0.127" layer="21"/>
+<wire x1="8" y1="14.27" x2="8" y2="-9.73" width="0.127" layer="21"/>
+<wire x1="8" y1="-9.73" x2="-8" y2="-9.73" width="0.127" layer="21"/>
+<wire x1="-8" y1="-9.73" x2="-8" y2="14.27" width="0.127" layer="21"/>
+<wire x1="-6" y1="6.47" x2="6" y2="6.47" width="0.127" layer="21"/>
+<wire x1="6" y1="6.47" x2="6" y2="-8.53" width="0.127" layer="21"/>
+<wire x1="6" y1="-8.53" x2="-6" y2="-8.53" width="0.127" layer="21"/>
+<wire x1="-6" y1="-8.53" x2="-6" y2="6.47" width="0.127" layer="21"/>
+<rectangle x1="-8" y1="7.27" x2="8" y2="14.27" layer="41"/>
+<rectangle x1="-8" y1="7.27" x2="8" y2="14.27" layer="42"/>
+<smd name="1" x="-7.5" y="5.77" dx="2" dy="1.2" layer="1"/>
+<smd name="2" x="-7.5" y="3.77" dx="2" dy="1.2" layer="1"/>
+<smd name="3" x="-7.5" y="1.77" dx="2" dy="1.2" layer="1"/>
+<smd name="4" x="-7.5" y="-0.23" dx="2" dy="1.2" layer="1"/>
+<smd name="5" x="-7.5" y="-2.23" dx="2" dy="1.2" layer="1"/>
+<smd name="6" x="-7.5" y="-4.23" dx="2" dy="1.2" layer="1"/>
+<smd name="7" x="-7.5" y="-6.23" dx="2" dy="1.2" layer="1"/>
+<smd name="8" x="-7.5" y="-8.23" dx="2" dy="1.2" layer="1"/>
+<smd name="9" x="7.5" y="-8.23" dx="2" dy="1.2" layer="1"/>
+<smd name="10" x="7.5" y="-6.23" dx="2" dy="1.2" layer="1"/>
+<smd name="11" x="7.5" y="-4.23" dx="2" dy="1.2" layer="1"/>
+<smd name="12" x="7.5" y="-2.23" dx="2" dy="1.2" layer="1"/>
+<smd name="13" x="7.5" y="-0.23" dx="2" dy="1.2" layer="1"/>
+<smd name="14" x="7.5" y="1.77" dx="2" dy="1.2" layer="1"/>
+<smd name="15" x="7.5" y="3.77" dx="2" dy="1.2" layer="1"/>
+<smd name="16" x="7.5" y="5.77" dx="2" dy="1.2" layer="1"/>
+<smd name="17" x="-5" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="18" x="-3" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="19" x="-1" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="20" x="1" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="21" x="3" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="22" x="5" y="-9" dx="2" dy="1.2" layer="1" rot="R90"/>
+<text x="-0.1" y="9.57" size="1.27" layer="21" font="vector" ratio="12" align="center">Antenna</text>
+<text x="-5" y="-11.23" size="1.4224" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<text x="4.5" y="-11.23" size="1.4224" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -1073,6 +970,48 @@ or will meet your specific requirements.&lt;p&gt;
 <pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <text x="-10.16" y="8.636" size="1.27" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP8266-12E">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<pin name="ADC" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="CH_PD" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="CLK" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="CS" x="-7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="DI" x="5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="DO" x="-5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO0" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GPIO2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO9" x="7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="GPIO10" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="GPIO12" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GPIO13" x="-17.78" y="-5.08" length="middle"/>
+<pin name="GPIO14" x="-17.78" y="0" length="middle"/>
+<pin name="GPIO15" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO16" x="-17.78" y="2.54" length="middle"/>
+<pin name="RESET" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="RXD" x="17.78" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="TXD" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="-17.78" y="-7.62" length="middle" direction="pwr"/>
+<text x="0" y="5.08" size="1.778" layer="94" font="vector" ratio="12" rot="R90" align="center">ESP12</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1127,6 +1066,42 @@ or will meet your specific requirements.&lt;p&gt;
 <connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3 GND4"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP-12E" prefix="X">
+<gates>
+<gate name="G$1" symbol="ESP8266-12E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP-12E">
+<connects>
+<connect gate="G$1" pin="ADC" pad="2"/>
+<connect gate="G$1" pin="CH_PD" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="20"/>
+<connect gate="G$1" pin="CS" pad="17"/>
+<connect gate="G$1" pin="DI" pad="21"/>
+<connect gate="G$1" pin="DO" pad="18"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GPIO0" pad="12"/>
+<connect gate="G$1" pin="GPIO10" pad="19"/>
+<connect gate="G$1" pin="GPIO12" pad="6"/>
+<connect gate="G$1" pin="GPIO13" pad="7"/>
+<connect gate="G$1" pin="GPIO14" pad="5"/>
+<connect gate="G$1" pin="GPIO15" pad="10"/>
+<connect gate="G$1" pin="GPIO16" pad="4"/>
+<connect gate="G$1" pin="GPIO2" pad="11"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
+<connect gate="G$1" pin="GPIO9" pad="22"/>
+<connect gate="G$1" pin="RESET" pad="1"/>
+<connect gate="G$1" pin="RXD" pad="15"/>
+<connect gate="G$1" pin="TXD" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1916,7 +1891,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="PAD759" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD760" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD761" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="MDL2" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="PAD762" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD763" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -2047,6 +2021,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="PAD39" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD41" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD42" library="wirepad" deviceset="1,6/0,8" device=""/>
+<part name="X1" library="microbuilder" deviceset="ESP-12E" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3595,7 +3570,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <instance part="PAD761" gate="P" x="2.54" y="-88.9" smashed="yes">
 <attribute name="VALUE" x="1.397" y="-92.202" size="1.778" layer="96"/>
 </instance>
-<instance part="MDL2" gate="G$1" x="-33.02" y="-33.02" rot="R90"/>
 <instance part="GND6" gate="1" x="-20.32" y="-22.86" rot="R90"/>
 <instance part="PAD762" gate="P" x="10.16" y="5.08" smashed="yes">
 <attribute name="VALUE" x="9.017" y="1.778" size="1.778" layer="96"/>
@@ -3974,6 +3948,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <instance part="PAD42" gate="P" x="-33.02" y="88.9" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-31.877" y="92.202" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="X1" gate="G$1" x="-30.48" y="-40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4296,10 +4271,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="0" y1="-170.18" x2="0" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="MDL2" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="PAD432" gate="P" pin="P"/>
 <pinref part="PAD447" gate="P" pin="P"/>
 <wire x1="106.68" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
@@ -4348,6 +4319,10 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="PAD54" gate="P" pin="P"/>
 <wire x1="40.64" y1="-50.8" x2="40.64" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4391,11 +4366,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="VDD6" gate="G$1" pin="VDD"/>
 <wire x1="25.4" y1="-160.02" x2="33.02" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-160.02" x2="33.02" y2="-154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="VDD5" gate="G$1" pin="VDD"/>
-<pinref part="MDL2" gate="G$1" pin="VCC"/>
-<wire x1="-10.16" y1="-55.88" x2="-22.86" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PAD11" gate="P" pin="P"/>
@@ -4590,6 +4560,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="PAD109" gate="P" pin="P"/>
 <junction x="10.16" y="17.78"/>
 <wire x1="10.16" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="VCC"/>
+<pinref part="VDD5" gate="G$1" pin="VDD"/>
+<wire x1="-22.86" y1="-58.42" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-58.42" x2="-10.16" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5163,15 +5139,14 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-33.02" y1="5.08" x2="-33.02" y2="0" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-10.16" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO5"/>
 <wire x1="-35.56" y1="-22.86" x2="-35.56" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="-10.16" x2="-33.02" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO5"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="PAD405" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO4"/>
 <wire x1="-33.02" y1="-22.86" x2="-33.02" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-12.7" x2="-25.4" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-12.7" x2="-25.4" y2="-10.16" width="0.1524" layer="91"/>
@@ -5181,12 +5156,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-25.4" y1="5.08" x2="-25.4" y2="0" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="0" x2="-25.4" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-10.16" x2="-25.4" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO4"/>
 </segment>
 </net>
 <net name="N$52" class="0">
 <segment>
 <pinref part="PAD409" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO0"/>
 <wire x1="-30.48" y1="-22.86" x2="-30.48" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-15.24" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
@@ -5196,12 +5171,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-17.78" y1="5.08" x2="-17.78" y2="0" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="0" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-10.16" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO0"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="PAD413" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO2"/>
 <wire x1="-27.94" y1="-22.86" x2="-27.94" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-17.78" x2="-10.16" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-17.78" x2="-10.16" y2="-10.16" width="0.1524" layer="91"/>
@@ -5211,12 +5186,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="0" x2="-10.16" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO2"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="PAD622" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO15"/>
 <wire x1="-25.4" y1="-22.86" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-20.32" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
@@ -5226,14 +5201,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="0" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO15"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
 <pinref part="PAD626" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="SCLK"/>
-<wire x1="-7.62" y1="-33.02" x2="5.08" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-33.02" x2="5.08" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="PAD625" gate="P" pin="P"/>
 <pinref part="PAD624" gate="P" pin="P"/>
 <pinref part="PAD623" gate="P" pin="P"/>
@@ -5251,18 +5224,17 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-17.78" y1="-78.74" x2="-17.78" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-83.82" x2="-17.78" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-73.66" x2="-17.78" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO14"/>
-<wire x1="-30.48" y1="-55.88" x2="-30.48" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-55.88" x2="-30.48" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-58.42" x2="-30.48" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-63.5" x2="-17.78" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-63.5" x2="-17.78" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO14"/>
+<junction x="-30.48" y="-58.42"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="PAD758" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="CS0"/>
-<wire x1="-7.62" y1="-45.72" x2="5.08" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-45.72" x2="5.08" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="PAD761" gate="P" pin="P"/>
 <pinref part="PAD760" gate="P" pin="P"/>
 <pinref part="PAD759" gate="P" pin="P"/>
@@ -5271,40 +5243,9 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="5.08" y1="-73.66" x2="5.08" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$58" class="0">
-<segment>
-<pinref part="PAD765" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="MOSI"/>
-<wire x1="-7.62" y1="-35.56" x2="12.7" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-35.56" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="PAD764" gate="P" pin="P"/>
-<pinref part="PAD763" gate="P" pin="P"/>
-<pinref part="PAD762" gate="P" pin="P"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="0" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="0" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$85" class="0">
-<segment>
-<pinref part="PAD769" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO10"/>
-<wire x1="-7.62" y1="-38.1" x2="20.32" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-38.1" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="PAD768" gate="P" pin="P"/>
-<pinref part="PAD767" gate="P" pin="P"/>
-<pinref part="PAD766" gate="P" pin="P"/>
-<wire x1="20.32" y1="5.08" x2="20.32" y2="0" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-10.16" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$86" class="0">
 <segment>
 <pinref part="PAD778" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO9"/>
-<wire x1="-7.62" y1="-40.64" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-40.64" x2="20.32" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="PAD781" gate="P" pin="P"/>
 <pinref part="PAD780" gate="P" pin="P"/>
 <pinref part="PAD779" gate="P" pin="P"/>
@@ -5321,11 +5262,13 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-48.26" y1="-78.74" x2="-48.26" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-83.82" x2="-48.26" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD770" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="REST"/>
-<wire x1="-40.64" y1="-55.88" x2="-40.64" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-55.88" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-58.42" x2="-40.64" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-63.5" x2="-48.26" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-63.5" x2="-48.26" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-78.74" x2="-48.26" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="RESET"/>
+<junction x="-40.64" y="-58.42"/>
 </segment>
 </net>
 <net name="N$88" class="0">
@@ -5336,11 +5279,13 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-40.64" y1="-78.74" x2="-40.64" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-83.82" x2="-40.64" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD627" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="ADC"/>
-<wire x1="-38.1" y1="-55.88" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-55.88" x2="-38.1" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-58.42" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-68.58" x2="-40.64" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-68.58" x2="-40.64" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-78.74" x2="-40.64" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="ADC"/>
+<junction x="-38.1" y="-58.42"/>
 </segment>
 </net>
 <net name="N$90" class="0">
@@ -5352,10 +5297,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-25.4" y1="-83.82" x2="-25.4" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD635" gate="P" pin="P"/>
 <wire x1="-25.4" y1="-78.74" x2="-25.4" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO16"/>
-<wire x1="-33.02" y1="-55.88" x2="-33.02" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-55.88" x2="-33.02" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-58.42" x2="-33.02" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-66.04" x2="-25.4" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-66.04" x2="-25.4" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO16"/>
+<junction x="-33.02" y="-58.42"/>
 </segment>
 </net>
 <net name="N$91" class="0">
@@ -5368,9 +5315,11 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="PAD742" gate="P" pin="P"/>
 <wire x1="-10.16" y1="-78.74" x2="-10.16" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-73.66" x2="-10.16" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO12"/>
 <wire x1="-10.16" y1="-60.96" x2="-27.94" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-60.96" x2="-27.94" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-60.96" x2="-27.94" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO12"/>
+<wire x1="-27.94" y1="-58.42" x2="-27.94" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-58.42"/>
 </segment>
 </net>
 <net name="N$121" class="0">
@@ -5382,10 +5331,10 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-2.54" y1="-83.82" x2="-2.54" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD746" gate="P" pin="P"/>
 <wire x1="-2.54" y1="-78.74" x2="-2.54" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-73.66" x2="-2.54" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="GPIO13"/>
-<wire x1="-2.54" y1="-58.42" x2="-25.4" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-58.42" x2="-25.4" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-73.66" x2="-2.54" y2="-59.69" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GPIO13"/>
+<wire x1="-25.4" y1="-58.42" x2="-25.4" y2="-59.69" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-59.69" x2="-2.54" y2="-59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$122" class="0">
@@ -5396,9 +5345,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="12.7" y1="-78.74" x2="12.7" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-83.82" x2="12.7" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD774" gate="P" pin="P"/>
-<pinref part="MDL2" gate="G$1" pin="MISO"/>
-<wire x1="-7.62" y1="-43.18" x2="12.7" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-43.18" x2="12.7" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-78.74" x2="12.7" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5413,10 +5359,10 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-48.26" y1="5.08" x2="-48.26" y2="0" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="0" x2="-48.26" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="TXD"/>
 <wire x1="-40.64" y1="-22.86" x2="-40.64" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-17.78" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-17.78" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="TXD"/>
 </segment>
 <segment>
 <pinref part="TX" gate="P" pin="P"/>
@@ -5434,10 +5380,10 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="-40.64" y1="5.08" x2="-40.64" y2="0" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="0" x2="-40.64" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-10.16" x2="-40.64" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="MDL2" gate="G$1" pin="RXD"/>
 <wire x1="-38.1" y1="-22.86" x2="-38.1" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-15.24" x2="-40.64" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-15.24" x2="-40.64" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="RXD"/>
 </segment>
 <segment>
 <pinref part="RX" gate="P" pin="P"/>
@@ -5446,17 +5392,19 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 </net>
 <net name="N$113" class="0">
 <segment>
-<pinref part="MDL2" gate="G$1" pin="CH_PD"/>
-<wire x1="-35.56" y1="-55.88" x2="-35.56" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-55.88" x2="-35.56" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="PAD634" gate="P" pin="P"/>
 <pinref part="PAD633" gate="P" pin="P"/>
 <pinref part="PAD632" gate="P" pin="P"/>
+<wire x1="-35.56" y1="-58.42" x2="-35.56" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-78.74" x2="-33.02" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-83.82" x2="-33.02" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PAD631" gate="P" pin="P"/>
 <wire x1="-33.02" y1="-78.74" x2="-33.02" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="-68.58" x2="-33.02" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-68.58" x2="-33.02" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="CH_PD"/>
+<junction x="-35.56" y="-58.42"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -5901,6 +5849,28 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="PAD244" gate="1" pin="P"/>
 <pinref part="PAD15" gate="P" pin="P"/>
 <wire x1="-45.72" y1="73.66" x2="-35.56" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="PAD764" gate="P" pin="P"/>
+<pinref part="PAD763" gate="P" pin="P"/>
+<pinref part="PAD762" gate="P" pin="P"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="PAD765" gate="P" pin="P"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="PAD768" gate="P" pin="P"/>
+<pinref part="PAD767" gate="P" pin="P"/>
+<pinref part="PAD766" gate="P" pin="P"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="0" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="PAD769" gate="P" pin="P"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
