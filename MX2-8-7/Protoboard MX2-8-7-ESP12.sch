@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2382,8 +2382,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J28" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
 <part name="J29" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
 <part name="J30" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
-<part name="TX" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="RX" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
+<part name="TX" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="JP2-1" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
@@ -2716,11 +2716,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J28" gate="G$1" x="157.48" y="-35.56"/>
 <instance part="J29" gate="G$1" x="172.72" y="-35.56"/>
 <instance part="J30" gate="G$1" x="330.2" y="-30.48"/>
-<instance part="TX" gate="G$1" x="53.34" y="15.24" smashed="yes" rot="R180">
+<instance part="RX" gate="G$1" x="53.34" y="15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.008" y="16.383" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="59.69" y="20.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RX" gate="G$1" x="53.34" y="10.16" smashed="yes" rot="R180">
+<instance part="TX" gate="G$1" x="53.34" y="10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.262" y="11.049" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="59.69" y="15.24" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3696,7 +3696,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <wire x1="83.82" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="25.4" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="RX" gate="G$1" pin="1"/>
+<pinref part="TX" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="TXD"/>
 <pinref part="J8" gate="G$1" pin="1"/>
@@ -3754,7 +3754,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="X1" gate="G$1" pin="RXD"/>
 <wire x1="86.36" y1="22.86" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="25.4" x2="86.36" y2="26.924" width="0.1524" layer="91"/>
-<pinref part="TX" gate="G$1" pin="1"/>
+<pinref part="RX" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="26.924" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="25.4" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="26.924" x2="55.88" y2="26.924" width="0.1524" layer="91"/>
